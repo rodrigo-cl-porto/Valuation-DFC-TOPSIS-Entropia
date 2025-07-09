@@ -1,0 +1,1 @@
+(textToCount as text, char as text) as number => List.Count(Text.PositionOf(textToCount, char, Occurrence.All))
