@@ -701,7 +701,7 @@ $$ \sum_{t=1}^{\infty}{(\frac{1+g}{1+r})^t} = \frac{q}{1-q} = \frac{\frac{1+g}{1
 
 Portanto, o valor presente de uma ação pelo modelo de Gordon será de:
 
-<span id="eq2-5">$$ VIA = \frac{D_0(1+g)}{r-g} \tag{2.5} $$</span>
+<span id="eq2-5"> $$ VIA = \frac{D_{0}(1+g)}{r-g} \tag{2.5} $$ </span>
 
 Apesar de ser um modelo bem criticado por assumir uma premissa considerada bastante irrealista para muitas empresas, tendo a sua aplicação limitada para empresas com crescimento estável, ele é um bom exemplo intuitivo sobre como as principais variáveis afetam o preço de uma ação.
 
