@@ -1,4 +1,4 @@
-# **AVALIAÇÃO DE SOCIEDADES ANÔNIMAS BRASILEIRAS: UMA PROPOSTA DE VALUATION COM FLUXO DE CAIXA DESCONTADO E ORDENAÇÃO POR TOPSIS**
+# **AVALIAÇÃO DE SOCIEDADES ANÔNIMAS BRASILEIRAS: Uma proposta de _valuation_ com Fluxo de Caixa Descontado e ordenação por TOPSIS**
 Trabalho de Conclusão de Curso apresentado ao Corpo Docente do Departamento de Engenharia de Produção da Escola de Engenharia da Universidade Federal Fluminense, como parte dos requisitos necessários à obtenção do título de Engenheiro de Produção.
 
 - **UNIVERSIDADE FEDERAL FLUMINENSE**
@@ -89,31 +89,31 @@ Aswath Damodaran
 
 ## LISTA DE FIGURAS
 
-- [Figura 1 – Fases do modelo CRISP-DM](#figure1)
-- [Figura 2 – Tripé do investidor](#figure2)
-- [Figura 3 – Fluxograma ETL da proposta de _valuation_](#figure3)
+1. [Figura 1 – Fases do modelo CRISP-DM](#figure1)
+1. [Figura 2 – Tripé do investidor](#figure2)
+1. [Figura 3 – Fluxograma ETL da proposta de _valuation_](#figure3)
 
 ## LISTA DE GRÁFICOS
 
-- [Gráfico 1 – Rentabilidades reais dos ativos no mercado dos EUA,1802-2012](#graphic1)
-- [Gráfico 2 – Retornos reais máximos e mínimos das ações, renda fixa e tesouro ao longo dos anos](#graphic2)
-- [Gráfico 3 – Desvio padrão dos retornos reais médios das ações, dos títulos de longo prazo e das letras em vários horizontes de investimento: dados históricos e hipótese do passeio aleatório, 1802-2012](#graphic3)
-- [Gráfico 4 – Retornos das Carteiras Selecionadas vs Retornos do Ibovespa](#graphic4)
-- [Gráfico 5 – Retornos dos modelos vs Retornos do Ibovespa](#graphic5)
+1. [Gráfico 1 – Rentabilidades reais dos ativos no mercado dos EUA,1802-2012](#graphic1)
+1. [Gráfico 2 – Retornos reais máximos e mínimos das ações, renda fixa e tesouro ao longo dos anos](#graphic2)
+1. [Gráfico 3 – Desvio padrão dos retornos reais médios das ações, dos títulos de longo prazo e das letras em vários horizontes de investimento: dados históricos e hipótese do passeio aleatório, 1802-2012](#graphic3)
+1. [Gráfico 4 – Retornos das Carteiras Selecionadas vs Retornos do Ibovespa](#graphic4)
+1. [Gráfico 5 – Retornos dos modelos vs Retornos do Ibovespa](#graphic5)
 
 ## LISTA DE TABELAS
 
-- [Tabela 1 – Modelo de Balanço Patrimonial](#table1)
-- [Tabela 2 – Modelo de DRE](#table2)
-- [Tabela 3 – Modelo de DFC](#table3)
-- [Tabela 4 – Cálculo do FCFE](#table4)
-- [Tabela 5 – Objetivos e valores do investidor conservador](#table5)
-- [Tabela 6 – Conjunto de dados utilizados](#table6)
-- [Tabela 7 – Indicadores fundamentalistas utilizadas no TOPSIS](#table7)
-- [Tabela 8 – Definição por parte da função](#table8)
-- [Tabela 9 – Carteiras Selecionadas (2016 – 2019)](#table9)
-- [Tabela 10 – Carteiras Selecionadas (2020 – 2023)](#table10)
-- [Tabela 11 – Retornos das carteiras dos modelos de backtest](#table11)
+1. [Tabela 1 – Modelo de Balanço Patrimonial](#table1)
+1. [Tabela 2 – Modelo de DRE](#table2)
+1. [Tabela 3 – Modelo de DFC](#table3)
+1. [Tabela 4 – Cálculo do FCFE](#table4)
+1. [Tabela 5 – Objetivos e valores do investidor conservador](#table5)
+1. [Tabela 6 – Conjunto de dados utilizados](#table6)
+1. [Tabela 7 – Indicadores fundamentalistas utilizadas no TOPSIS](#table7)
+1. [Tabela 8 – Definição por parte da função](#table8)
+1. [Tabela 9 – Carteiras Selecionadas (2016 – 2019)](#table9)
+1. [Tabela 10 – Carteiras Selecionadas (2020 – 2023)](#table10)
+1. [Tabela 11 – Retornos das carteiras dos modelos de backtest](#table11)
 
 ## Sumário
 
