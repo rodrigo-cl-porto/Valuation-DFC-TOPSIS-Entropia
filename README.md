@@ -782,7 +782,7 @@ Entretando, Damodaran (2012), Póvoa (2012) e Reis (2023), falam que os FCFEs hi
             <td>Este é o caixa que sobra depois do atendimento de todas as necessidades. Se for positivo, representa um dividendo potencial</td>
         </tr>
         <tr>
-            <td colspan=3>Fonte: Adaptado de Damodaran (2012) e Póvoa (2012)</td>
+            <td colspan=3 style="text-align:center">Fonte: Adaptado de Damodaran (2012) e Póvoa (2012)</td>
         </tr>
     </tbody>
 </table>
