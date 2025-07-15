@@ -144,7 +144,7 @@ Aswath Damodaran
 1. [CONCLUSÕES](#conclusões)
 1. [REFERÊNCIAS](#referências)
 
-### **INTRODUÇÃO**
+# **INTRODUÇÃO**
 
 Avaliar com precisão o valor justo de um ativo é uma tarefa imprescindível para os analistas, investidores, administradores e gestores de empresas e instituições financeiras. Tomar decisões acertadas sobre a alocação de recursos é crucial, pois isso representa um potencial significativo para o crescimento dos investimentos. Isso se traduz em benefícios tanto para as empresas e instituições, que podem obter mais capital próprio para financiar a implementação de seus planos estratégicos, por meio de CAPEX, programas, projetos etc., quanto para o investidor individual, que pode acelerar a acumulação do patrimônio necessário para gerar a renda passiva que cubra seu custo de vida, alcançando, assim, a almejada independência financeira.
 
@@ -193,17 +193,17 @@ A principal distinção deste estudo em relação ao trabalho de Lima et al. (20
 
 Desse modo, o estudo busca introduzir um método abrangente que leve em consideração tanto os fatores internos quanto externos para estimar o valor das empresas. Isso é alcançado não somente por meio da análise dos aspectos financeiros internos, mas também através da comparação da empresa com outras entidades do mesmo setor.
 
-#### **OBJETIVOS**
+## **OBJETIVOS**
 
 A seguir, são apresentados os objetivos deste trabalho, os quais têm como propósito responder a seguinte questão: “Dado a ineficiência existente no mercado financeiro brasileiro, é possível criar uma carteira de ações com performance superior e consistente no mercado acionário, ao avaliar os seus potenciais de valorização por meio da aplicação de um método que considere não só o seus valores intrínsecos, mas também os seus valores relativos às outras empresas pela comparação de indicadores fundamentalistas por meio de um MCDM?”.
 
-##### **Objetivo Geral**
+### **Objetivo Geral**
 
 O objetivo geral será criar um processo automatizado de _valuation_ que busca construir uma carteira de ações a partir do seu potencial de valorização, calculado por um método de _valuation_ que considere tanto as abordagens intríseca e comparativa.
 
 Para alcançar esse objetivo, um processo ETL de dados financeiros das empresas listadas na B3 será escrito em um script em código Mashup (M Code), linguagem de consulta nativa do Power Query.
 
-##### **Objetivos Específicos**
+### **Objetivos Específicos**
 
 a. Estudar as principais referências disponíveis sobre _valuation_, com o intuito de verificar quais os melhores métodos para serem aplicados para o mercado brasileiro, quais os índices de referência a serem considerados e quais as premissas mais adequadas para o modelo adotado.
 
@@ -211,7 +211,7 @@ a. Estudar o valor intrínseco das empresas a partir dos documentos e relatório
 
 a. Verificar o valor relativo das empresas de um mesmo setor a partir de um método multicritério de apoio à decisão, comparando as empresas por meio de indicadores fundamentalistas.
 
-#### **Delimitações do estudo**
+## **DELIMITAÇÕES DO ESTUDO**
 
 Para a composição de uma carteira de um determinado ano, o estudo delimitar-se-á na aplicação de um método de avaliação intrínseca seguida de um ajuste por meio da avaliação comparativa. A avaliação intrínseca limitar-se-á na análise financeira e operacional dos dados públicos das empresas de capital aberto na B3 ao longo dos últimos 5 anos a partir de uma data de referência, com cálculo para projeções dos seus fluxos de caixa para os próximos 3 anos.
 
@@ -219,7 +219,7 @@ A avaliação comparativa, por sua vez, limitar-se-á na análise dos indicadore
 
 Para a realização dos _backtests_, pegou-se o maior período histórico disponível que dava para extrair dos dados disponíveis pela CVM e pela estruturação das avaliações, de 2016 a 2023.
 
-#### **Estruturação do estudo**
+## **ESTRUTURAÇÃO DO ESTUDO**
 
 O presente trabalho foi estruturado em cinco seções: introdução, referencial teórico, metodologia, discussão dos resultados e conclusão.
 
@@ -233,17 +233,17 @@ A penúltima seção se reservará para detalhar e explicar os resultados obtido
 
 For fim, a última seção apresentará as principais conclusões feitas sobre os resultados e sobre o êxito no alcance dos objetivos almejados.
 
-### **REFERENCIAL TEÓRICO**
+# **REFERENCIAL TEÓRICO**
 
 Nesta seção, será explicado os principais conceitos teóricos por trás da metodologia adotada, de modo que o leitor entenda e acompanhe o raciocínio empregado para o processo de avaliação das empresas proposta neste trabalho.
 
-#### **DEMONSTRAÇÕES CONTÁBEIS**
+## **DEMONSTRAÇÕES CONTÁBEIS**
 
 De acordo com o artigo 176, da Lei 6.404/1976, a Lei das Sociedades por Ações, as demonstrações contábeis, também chamadas de demonstrações financeiras, são relatórios que as sociedades de capital aberto devem elaborar e publicar para informar com clareza sobre a sua posição patrimonial, financeira e o seu desempenho durante o seu exercício social, que geralmente tem duração de um ano.
 
 Dentre as demonstrações financeiras exigidas, as principais para a realização de análises de _valuation_ são o Balanço Patrimonial (BP), a Demonstração de Resultado de Exercício (DRE) e a Demonstração do Fluxo de Caixa (DFC).
 
-##### **Balanço Patrimonial (BP)**
+### **Balanço Patrimonial (BP)**
 
 O BP busca resumir a situação patrimonial da empresa, geralmente estruturado em forma de “T”, em que se convencionou que o lado esquerdo são listados os bens e direitos (aplicações de recursos), enquanto no lado direito são listados as obrigações e o patrimônio líquido da empresa (fontes de recursos).
 
@@ -326,7 +326,7 @@ A [Tabela 1](#table1) exemplifica um modelo de Balanço Patrimonial e as contas 
     </tbody>
 </table>
 
-##### **Demonstração de Resultado de Exercício (DRE)**
+### **Demonstração de Resultado de Exercício (DRE)**
 
 A <abbr title="Demonstração de Resultado de Exercício">DRE</abbr> busca documentar o desempenho econômico da empresa, isto é, se ela teve lucro ou prejuízo por meio das suas operações ou do seu resultado financeiro. Geralmente, o exercício social considerado é de um ano.
 
@@ -334,9 +334,162 @@ Segundo Ribeiro (2010), a <abbr title="Demonstração de Resultado de Exercício
 
 A [Tabela 2](#table2) exemplifica um modelo de DRE e as possíveis contas que a compõe.
 
-<table><thead><tr><th colspan="2"><p><a id="_Ref165280221"></a><a id="_Toc167030361"></a>Tabela 2 – Modelo de DRE</p></th></tr><tr><th><p><strong>CONTA</strong></p></th><th><p><strong>EXEMPLOS</strong></p></th></tr></thead><tbody><tr><td><p>(+) Receita Operacional Bruta</p></td><td><ul><li>Vendas de mercadorias</li><li>Prestação de serviços</li></ul></td></tr><tr><td><p>(-) Deduções e Abatimentos</p></td><td><ul><li>Vendas Anuladas</li><li>Descontos Incondicionais Concedidos</li><li>ICMS sobre as vendas</li><li>PIS/COFINS sobre faturamento</li></ul></td></tr><tr><td><p>(=) Receita Operacional Líquida</p></td><td></td></tr><tr><td><p>(-) Custos Operacionais</p></td><td><ul><li>Custos das mercadorias vendidas</li><li>Custos dos serviços prestados</li></ul></td></tr><tr><td><p>(=) Lucro Operacional Bruto</p></td><td></td></tr><tr><td><p>(-) Despesas Operacionais</p></td><td><ul><li>Despesas com vendas</li><li>Despesas Gerais e Administrativas</li></ul></td></tr><tr><td><p>(=) EBITDA</p></td><td><ul><li>Resultado do exercício antes das deduções</li></ul></td></tr><tr><td><p>(-) Amortizações</p></td><td><ul><li>Pagamento do principal</li></ul></td></tr><tr><td><p>(-) Depreciação</p></td><td><ul><li>Depreciação de equipamentos e máquinas</li><li>Depreciação de imóveis</li><li>Depreciação de veículos</li></ul></td></tr><tr><td><p>(=) EBIT</p></td><td><ul><li>Resultado antes dos impostos e despesas financeiras</li></ul></td></tr><tr><td><p>(-) Impostos</p></td><td><ul><li>CSSL</li><li>IR</li></ul></td></tr><tr><td><p>(+) Resultado Não Operacional</p></td><td><ul><li>Venda de Veículos</li><li>Venda de Terrenos</li><li>Ganhos ou perdas judiciais</li><li>Resultados de outras atividades não operacionais</li></ul></td></tr><tr><td><p>(-) Despesas Financeiras</p></td><td><ul><li>Pagamento de juros</li></ul></td></tr><tr><td><p>(+) Receitas Financeiras</p></td><td><ul><li>Rendimentos de aplicações financeiros</li><li>Prêmios sobre resgate de títulos e debêntures</li></ul></td></tr><tr><td><p>(=) Resultado do exercício após as deduções</p></td><td></td></tr><tr><td><p>(-) Participações</p></td><td><ul><li>Debêntures</li><li>Empregados</li><li>Administradores</li><li>Partes Beneficiárias</li></ul></td></tr><tr><td><p>(=) Lucro Líquido</p></td><td><ul><li>Resultado do exercício social</li></ul></td></tr><tr><td colspan="2"><p>Fonte: Adaptado de Ribeiro (2010)</p></td></tr></tbody></table>
+<table id="table2">
+    <caption>Tabela 2 – Modelo de DRE</caption>
+    <thead>
+        <tr>
+            <th style="text-align:center">CONTA</th>
+            <th style="text-align:center">EXEMPLOS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>(+) Receita Operacional Bruta</td>
+            <td>
+                <ul>
+                    <li>Vendas de mercadorias</li>
+                    <li>Prestação de serviços</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(-) Deduções e Abatimentos</td>
+            <td>
+                <ul>
+                    <li>Vendas Anuladas</li>
+                    <li>Descontos Incondicionais Concedidos</li>
+                    <li>ICMS sobre as vendas</li>
+                    <li>PIS/COFINS sobre faturamento</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(=) Receita Operacional Líquida</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(-) Custos Operacionais</td>
+            <td>
+                <ul>
+                    <li>Custos das mercadorias vendidas</li>
+                    <li>Custos dos serviços prestados</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(=) Lucro Operacional Bruto</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(-) Despesas Operacionais</td>
+            <td>
+                <ul>
+                    <li>Despesas com vendas</li>
+                    <li>Despesas Gerais e Administrativas</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(=) EBITDA</td>
+            <td>
+                <ul>
+                    <li>Resultado do exercício antes das deduções</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(-) Amortizações</td>
+            <td>
+                <ul>
+                    <li>Pagamento do principal</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(-) Depreciação</td>
+            <td>
+                <ul>
+                    <li>Depreciação de equipamentos e máquinas</li>
+                    <li>Depreciação de imóveis</li>
+                    <li>Depreciação de veículos</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(=) EBIT</td>
+            <td>
+                <ul>
+                    <li>Resultado antes dos impostos e despesas financeiras</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(-) Impostos</td>
+            <td>
+                <ul>
+                    <li>CSSL</li>
+                    <li>IR</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(+) Resultado Não Operacional</td>
+            <td>
+                <ul>
+                    <li>Venda de Veículos</li>
+                    <li>Venda de Terrenos</li>
+                    <li>Ganhos ou perdas judiciais</li>
+                    <li>Resultados de outras atividades não operacionais</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(-) Despesas Financeiras</td>
+            <td>
+                <ul>
+                    <li>Pagamento de juros</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(+) Receitas Financeiras</td>
+            <td>
+                <ul>
+                    <li>Rendimentos de aplicações financeiros</li>
+                    <li>Prêmios sobre resgate de títulos e debêntures</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>(=) Resultado do exercício após as deduções</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(-) Participações</td>
+            <td>
+                <ul>
+                    <li>Debêntures</li>
+                    <li>Empregados</li>
+                    <li>Administradores</li>
+                    <li>Partes Beneficiárias</li>
+                </ul>
+            </td>
+        </tr>
+            <tr>
+                <td>(=) Lucro Líquido</td>
+                <td>
+                    <ul>
+                        <li>Resultado do exercício social</li>
+                    </ul>
+                </td>
+            </tr>
+        <tr>
+            <td colspan="2" style="text-align:center">Fonte: Adaptado de Ribeiro (2010)</td>
+        </tr>
+    </tbody>
+</table>
 
-##### **Demonstração de Fluxo de Caixa (DFC)**
+### **Demonstração de Fluxo de Caixa (DFC)**
 
 Fluxos de caixa são todas as saídas (créditos) e entradas (débitos) da conta caixa da empresa e seus equivalentes. Segundo Ribeiro (2010), o conceito de caixa e seus equivalentes engloba todo tipo de conta ou aplicação financeira com liquidez e disponibilidade imediata tais como a própria conta Caixa, Banco conta Movimento, Aplicações Financeiras de Liquidez Imediata, caderneta de poupança, CDB etc.
 
@@ -344,9 +497,121 @@ A DFC, por sua vez, visa evidenciar todas as transações realizadas nas disponi
 
 A [Tabela 3](#table3) exemplifica um modelo de DFC e suas possíveis transações.
 
-<table><thead><tr><th colspan="2"><p><a id="_Ref165280290"></a><a id="_Toc167030362"></a>Tabela 3 – Modelo de DFC</p></th></tr><tr><th><p><strong>DESCRIÇÃO</strong></p></th><th><p><strong>EXEMPLOS</strong></p></th></tr></thead><tbody><tr><td colspan="2"><p><strong>FLUXOS OPERACIONAIS</strong></p></td></tr><tr><td><p>Resultado do exercício/período</p></td><td><ul><li>Ajustes para conciliar o resultado às disponibilidades geradas pelas atividades operacionais</li></ul></td></tr><tr><td><p>Depreciação e Amortização</p></td><td></td></tr><tr><td><p>Resultado na venda de ativos permanentes</p></td><td></td></tr><tr><td><p>Equivalência patrimonial</p></td><td></td></tr><tr><td><p>Recebimento de lucros e dividendos de subsidiárias</p></td><td><ul><li>Variações nos ativos e passivos</li><li>Variação em Contas a Receber</li><li>Variação dos Estoques</li><li>Variação da conta Fornecedores</li><li>Variação em Contas a Pagar e provisões</li><li>Variação no IR e CSSL</li><li>Disponibilidades líquidas geradas pelas (aplicadas nas) atividades operacionais</li></ul></td></tr><tr><td colspan="2"><p><strong>FLUXOS DE INVESTIMENTOS</strong></p></td></tr><tr><td><p>Imobilizado</p></td><td><ul><li>Compras do Imobilizado</li><li>Vendas do Imobilizado</li></ul></td></tr><tr><td><p>Ações/quotas</p></td><td><ul><li>Aquisição ações/cotas</li><li>Venda de ações/cotas</li></ul></td></tr><tr><td><p>Recebimento por vendas de ativos não circulantes</p></td><td><ul><li>Disponibilidades líquidas geradas pelas (aplicadas nas) atividades operacionais</li></ul></td></tr><tr><td colspan="2"><p><strong>FLUXOS DE FINANCIAMENTOS</strong></p></td></tr><tr><td><p>Capital</p></td><td><ul><li>Integralização de capital</li><li>Pagamento de lucros/dividendos</li></ul></td></tr><tr><td><p>Empréstimos</p></td><td><ul><li>Empréstimos tomados</li><li>Pagamentos de empréstimos/debêntures</li></ul></td></tr><tr><td><p>Juros</p></td><td><ul><li>Juros recebidos de empréstimos</li><li>Juros pagos por empréstimos</li></ul></td></tr><tr><td colspan="2"><p><strong>VARIAÇÃO DAS DISPONIBILIDADES</strong></p></td></tr><tr><td colspan="2"><p>Fonte: Adaptado de Ribeiro (2010)</p></td></tr></tbody></table>
+<table id="table3">
+    <caption>Tabela 3 – Modelo de DFC</caption>
+    <thead>
+        <tr>
+            <th style="text-align:center">DESCRIÇÃO</th>
+            <th style="text-align:center">EXEMPLOS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2">FLUXOS OPERACIONAIS</td>
+        </tr>
+        <tr>
+            <td>Resultado do exercício/período</td>
+            <td>
+                <ul>
+                    <li>Ajustes para conciliar o resultado às disponibilidades geradas pelas atividades operacionais</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Depreciação e Amortização</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Resultado na venda de ativos permanentes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Equivalência patrimonial</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Recebimento de lucros e dividendos de subsidiárias</td>
+            <td>
+                <ul>
+                    <li>Variações nos ativos e passivos</li>
+                    <li>Variação em Contas a Receber</li>
+                    <li>Variação dos Estoques</li>
+                    <li>Variação da conta Fornecedores</li>
+                    <li>Variação em Contas a Pagar e provisões</li>
+                    <li>Variação no IR e CSSL</li>
+                    <li>Disponibilidades líquidas geradas pelas (aplicadas nas) atividades operacionais</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">FLUXOS DE INVESTIMENTOS</td>
+        </tr>
+        <tr>
+            <td>Imobilizado</td>
+            <td>
+                <ul>
+                    <li>Compras do Imobilizado</li>
+                    <li>Vendas do Imobilizado</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Ações/quotas</td>
+            <td>
+                <ul>
+                    <li>Aquisição ações/cotas</li>
+                    <li>Venda de ações/cotas</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Recebimento por vendas de ativos não circulantes</td>
+            <td>
+                <ul>
+                    <li>Disponibilidades líquidas geradas pelas (aplicadas nas) atividades operacionais</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">FLUXOS DE FINANCIAMENTOS</td>
+        </tr>
+        <tr>
+            <td><Capital</td>
+            <td>
+                <ul>
+                    <li>Integralização de capital</li>
+                    <li>Pagamento de lucros/dividendos</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Empréstimos</td>
+            <td>
+                <ul>
+                    <li>Empréstimos tomados</li>
+                    <li>Pagamentos de empréstimos/debêntures</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Juros</td>
+            <td>
+                <ul>
+                    <li>Juros recebidos de empréstimos</li>
+                    <li>Juros pagos por empréstimos</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">VARIAÇÃO DAS DISPONIBILIDADES</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center">Fonte: Adaptado de Ribeiro (2010)</td>
+        </tr>
+    </tbody>
+</table>
 
-#### **VALUATION**
+## **VALUATION**
 
 Para que um bom investimento seja feito, é necessário que o investidor não pague caro demais por um ativo para que não perca o seu potencial de retorno, nem o venda barato demais, pois representaria um significativo custo de oportunidade. Ao se comparar a cotação de uma ação com seu valor intrínseco, o investidor encontrará o que Graham (2016) chama de margem de segurança (MS), dada pelo seu potencial de valorização. Portanto, teoricamente, quanto maior fosse essa margem, mais seguro e certo era de estar investido nessa ação.
 
@@ -379,7 +644,7 @@ Já os modelos mais complexos podem envolver Fluxo de Caixa Descontado Estocást
 
 Apesar dos diversos tipos de modelos de _valuation_, Damodaran (2012) os agrupa em duas abordagens: _intrínseca_ e _comparativa_. A primeira envolve a avaliação da ação a partir dos fluxos de caixa gerados pela empresa, enquanto a segunda envolve a avaliação da ação a partir da sua comparação com ações de empresas semelhantes. O modelo mais utilizado para a abordagem intrínseca é o FCD, enquanto a abordagem comparativa comumente emprega a comparação de múltiplos, também conhecidos como indicadores fundamentalistas.
 
-##### **Fluxo de Caixa Descontado (FCD)**
+### **Fluxo de Caixa Descontado (FCD)**
 
 Os modelos de FCD partem do princípio de que o valor do dinheiro no futuro é sempre menor do que o seu valor presente, pois é sempre preferível receber, por exemplo, R$ 1.000,00 agora do que esperar para receber a mesma quantia em qualquer período futuro. Tal desvalorização do dinheiro é determinada por uma taxa de desconto, que é proporcional ao risco assumido de ter de esperar para recebê-lo.
 
@@ -409,7 +674,7 @@ Onde:
 
 Para o cálculo do $VT$, geralmente é empregado o modelo de crescimento perpétuo de Gordon.
 
-###### **Modelo de Gordon**
+#### **Modelo de Gordon**
 
 O modelo de Gordon foi originalmente proposto por J. B. Williams, mas que recebeu o sobrenome de M. J. Gordon, que divulgou em 1956 o modelo de crescimento perpétuo (FILHO et al., 2008).
 
@@ -444,7 +709,7 @@ Conforme apontado por Filho et al. (2008), o modelo de Gordon não apenas demons
 
 No entanto, como ressaltado também por Filho et al. (2008), embora o aumento de $D_0$ aumente o $VIA$, isso acaba implicando em uma redução em $g$, pois a empresa terá menos recursos disponíveis para investimentos de capital (CAPEX). Consequentemente, o denominador $(r-g)$ aumenta, resultando em uma diminuição compensatória do valor da ação. De maneira similar, o oposto ocorre quando $D_0$ diminui. Embora a distribuição de dividendos diminua o $VIA$, a empresa terá mais recursos para investimentos de capital. Assim, $g$ aumenta e o denominador $(r-g)$ diminui, o que leva a um aumento compensatório no preço da ação.
 
-###### **FCFE**
+#### **FCFE**
 
 O modelo de Fluxo de Caixa Livre para os Acionistas busca, primeiramente, estimar qual o valor intrínseco de mercado $VIM$ da empresa a partir do desconto dos fluxos de caixa pertencentes exclusivamente aos acionistas após o pagamento das despesas, impostos e amortização de dívidas.
 
@@ -524,7 +789,7 @@ Entretando, Damodaran (2012), Póvoa (2012) e Reis (2023), falam que os FCFEs hi
 
 Além das projeções dos $FCFE_t$, um outro desafio para o cálculo do $VIM$ é a determinação da taxa de custo de capital próprio ($r$) mais apropriada. Neste trabalho, foi adotado o modelo CAPM para o cálculo dessa taxa.
 
-###### **Modelo CAPM**
+#### **Modelo CAPM**
 
 Segundo Damodaran (2012), um dos modelos mais empregados para a determinação do custo do capital próprio é o CAPM, desenvolvido no início da década de 1960. Partindo da hipótese de que a diversificação de ativos não traz custos adicionais nem aumento de ganhos, então a melhor carteira de ações seria aquela que compõe todas as ações negociadas na bolsa, isto é, a _carteira de mercado_. Nesse cenário, o risco de um ativo seria equivalente ao seu risco adicional à carteira de mercado, representado pelo indicador $\beta$, calculado por:
 
@@ -554,33 +819,30 @@ Onde:
 
 A lógica por trás da fórmula é a de que, ao investir em um ativo com risco, o investidor deverá exigir uma taxa equivalente à taxa que um ativo livre de riscos renderia, mais um prêmio por estar investindo no ativo com risco. Portanto, quanto maior for a sensibilidade do ativo em relação aos movimentos do mercado – isto é, quanto maior for o valor do $\beta_i$ –, maior deverá ser a remuneração pelo risco incorrido.
 
-No entanto, no método de estimação dos FCFEs não se leva em consideração a estrutura de capital da empresa, pois não é considerado nenhum outro capital além do seu capital próprio. Portanto, deve-se desconsiderar a sua alavancagem financeira, uma vez que boa parte da volatilidade de suas ações se deve pela proporção das dívidas assumidas (PÓVOA, 2012). Além disso, uma vez que diferentes empresas apresentam diferentes estruturas de capital, o beta a ser utilizado no modelo CAPM deve ser o desalavancado (), calculado como:
+No entanto, no método de estimação dos FCFEs não se leva em consideração a estrutura de capital da empresa, pois não é considerado nenhum outro capital além do seu capital próprio. Portanto, deve-se desconsiderar a sua alavancagem financeira, uma vez que boa parte da volatilidade de suas ações se deve pela proporção das dívidas assumidas (PÓVOA, 2012). Além disso, uma vez que diferentes empresas apresentam diferentes estruturas de capital, o beta a ser utilizado no modelo CAPM deve ser o desalavancado ($\beta_d$), calculado como:
 
-|     |     | (2.11) |
-| --- | --- | --- |
+<span id="eq2-11">$$\beta_d = \frac{\beta}{1+(1-T)\frac{D}{E}} \tag{2.11}$$</span>
 
 Onde:
 
-- é o beta original, alavancado;
-- é a alíquota do imposto;
+- $\beta$ é o beta original, alavancado;
+- $T$ é a alíquota do imposto;
 
-Segundo Damodaran (2012), apesar do CAPM ser intuitivo e simples, ele parte de premissas irrealistas, além do fato de os individuais dos ativos não serem eficazes para explicar diferenças de retorno entre diferentes ações. Póvoa (2012) enumera como principais desvantagens do uso dos estatísticos (1) a eventual ou recorrente falta de liquidez de uma ação, havendo longos períodos em que ela não é negociada na bolsa, o que pode distorcer bastante o seu ; (2) os desvios-padrão dos estatísticos excessivamente grandes, sendo, portanto, pouco críveis para o cálculo da taxa de desconto ; (3) Cálculo dos com base em dados históricos, o que não necessariamente reflete a sensibilidade futura do ativo; (4) Uso de índices de referência distorcidos para o seu cálculos, com alguns sendo altamente concentrados em um ou vários setores específicos, não sendo, portanto, bons representantes da carteira de mercado.
+Segundo Damodaran (2012), apesar do CAPM ser intuitivo e simples, ele parte de premissas irrealistas, além do fato de os $\beta_i$ individuais dos ativos não serem eficazes para explicar diferenças de retorno entre diferentes ações. Póvoa (2012) enumera como principais desvantagens do uso dos $\beta_i$ estatísticos (1) a eventual ou recorrente falta de liquidez de uma ação, havendo longos períodos em que ela não é negociada na bolsa, o que pode distorcer bastante o seu $\beta_i$; (2) os desvios-padrão dos $\beta_i$ estatísticos são excessivamente grandes, sendo, portanto, pouco críveis para o cálculo da taxa de desconto $r$; (3) Cálculo dos $\beta_i$ com base em dados históricos, o que não necessariamente reflete a sensibilidade futura do ativo; (4) Uso de índices de referência distorcidos para o seu cálculos, com alguns sendo altamente concentrados em um ou vários setores específicos, não sendo, portanto, bons representantes da carteira de mercado.
 
-Por conta disso, Damodaran (2012) sugere como solução substituir o pelo beta médio do setor () em que a empresa se encontra, uma vez que a média de muitos atenua o efeito dos erros e das distorções. Póvoa (2012) sugere como cálculo para o a média ponderada pelos valores de mercado das empresas.
+Por conta disso, Damodaran (2012) sugere como solução substituir o $\beta_i$ pelo beta médio do setor ($\beta_{\text{setor}}$) em que a empresa se encontra, uma vez que a média de muitos $\beta_i$ atenua o efeito dos erros e das distorções. Póvoa (2012) sugere como cálculo para o $\beta_{\text{setor}}$ a média ponderada pelos valores de mercado $VM_i$ das empresas.
 
-|     |     | (2.12) |
-| --- | --- | --- |
+<span id="eq2-12">$$\beta_{\text{setor}} = \frac{\sum_{i=1}^{m}{\beta_i VM_i}}{\sum_{i=1}^{m}{VM_i}} \tag{2.12}$$</span>
 
-Onde é o total de empresas presente no setor.
+Onde $m$ é o total de empresas presentes no setor.
 
 Portanto, a equação recomendada para o cálculo do custo do capital próprio no método de FCFE seria:
 
-|     |     | (2.13) |
-| --- | --- | --- |
+<span id="eq2-13">$$r = R_f + \beta_{\text{setor}}(E[R_m]-R_f) \tag{2.13}$$</span>
 
-#### FCFF
+#### **FCFF**
 
-O modelo de Fluxo de Caixa Livre para a Empresa, diferentemente do FCFE, busca estimar o valor intrínseco da empresa ou da firma (), isto é, o valor considerando o capital total alocado na empresa, financiado pelo capital dos sócios e acionistas (capital próprio) e as dívidas e empréstimos dos credores (capital de terceiros). A fórmula do é análoga à do .
+O modelo de Fluxo de Caixa Livre para a Empresa, diferentemente do FCFE, busca estimar o valor intrínseco da empresa ou da firma ($VIF$), isto é, o valor considerando o capital total alocado na empresa, financiado pelo capital dos sócios e acionistas (capital próprio) e as dívidas e empréstimos dos credores (capital de terceiros). A fórmula do $VIF$ é análoga à do $VIM$.
 
 |     |     | (2.14) |
 | --- | --- | --- |
