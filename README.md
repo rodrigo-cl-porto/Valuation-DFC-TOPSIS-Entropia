@@ -1,4 +1,4 @@
-# **AVALIAÇÃO DE SOCIEDADES ANÔNIMAS BRASILEIRAS: Uma proposta de _valuation_ com Fluxo de Caixa Descontado e ordenação por TOPSIS**
+# AVALIAÇÃO DE SOCIEDADES ANÔNIMAS BRASILEIRAS: Uma proposta de _valuation_ com Fluxo de Caixa Descontado e ordenação por TOPSIS
 Trabalho de Conclusão de Curso apresentado ao Corpo Docente do Departamento de Engenharia de Produção da Escola de Engenharia da Universidade Federal Fluminense, como parte dos requisitos necessários à obtenção do título de Engenheiro de Produção.
 
 - **UNIVERSIDADE FEDERAL FLUMINENSE**
@@ -83,9 +83,11 @@ Agradeço ao Prof. Gilson Lima pela sua orientação com este trabalho e pelos i
 
 Agradeço também aos vários colegas e ao restante dos professores com quem me encontrei ao longo da minha jornada acadêmica na UFF
 
+## EPÍGRAFE
+
 > _O sucesso em investimentos decorre não de acertar sempre, mas de errar com menos frequência do que os outros._
 
-Aswath Damodaran
+_Aswath Damodaran_
 
 ## LISTA DE FIGURAS
 
@@ -189,7 +191,7 @@ Dado isso, este estudo visa apresentar um modelo de avaliação que combina as d
 
 Essa proposta de _valuation_ é inspirada no trabalho realizado por Lima et al. (2010), onde os autores aplicaram o modelo de FCD para calcular o valor intrínseco de três MPEs, dos setores químico, farmacêutico e de turismo. Posteriormente, esse valor foi ajustado (polido) com base nos resultados obtidos por um método MCDM, conduzido pelo software Macbeth.
 
-A principal distinção deste estudo em relação ao trabalho de Lima et al. (2010) reside na proposta de um modelo automatizado de avaliação, por meio de um processo de Extração, Transformação e Carregamento (ETL) de dados financeiros de todas as empresas listadas na [B3](#b3). A partir desses dados, os valores intrínsecos das ações serão inicialmente estimados pelo FCD para, posteriormente, serem ajustados pelo coeficiente de similaridade calculado pelo TOPSIS.
+A principal distinção deste estudo em relação ao trabalho de Lima et al. (2010) reside na proposta de um modelo automatizado de avaliação, por meio de um processo de Extração, Transformação e Carregamento ([ETL](#etl)) de dados financeiros de todas as empresas listadas na [B3](#b3). A partir desses dados, os valores intrínsecos das ações serão inicialmente estimados pelo FCD para, posteriormente, serem ajustados pelo coeficiente de similaridade calculado pelo TOPSIS.
 
 Desse modo, o estudo busca introduzir um método abrangente que leve em consideração tanto os fatores internos quanto externos para estimar o valor das empresas. Isso é alcançado não somente por meio da análise dos aspectos financeiros internos, mas também através da comparação da empresa com outras entidades do mesmo setor.
 
@@ -268,7 +270,7 @@ A [Tabela 1](#table1) exemplifica um modelo de Balanço Patrimonial e as contas 
         </tr>
         <tr>
             <td>
-                <ul>
+                <ul style="list-style-type:none">
                     <li>Disponibilidades</li>
                     <li>Clientes</li>
                     <li>Estoque</li>
@@ -276,7 +278,7 @@ A [Tabela 1](#table1) exemplifica um modelo de Balanço Patrimonial e as contas 
                 </ul>
             </td>
             <td>
-                <ul>
+                <ul style="list-style-type:none">
                     <li>Fornecedores</li>
                     <li>Empréstimos e financiamentos</li>
                     <li>Obrigações tributárias</li>
@@ -291,21 +293,25 @@ A [Tabela 1](#table1) exemplifica um modelo de Balanço Patrimonial e as contas 
         </tr>
         <tr>
             <td rowspan="3">
-                <ul>
+                <ul style="list-style-type:none">
                     <li>Direitos a receber a longo prazo</li>
                     <li>Investimentos</li>
                     <li>Imobilizado</li>
                     <li>Intangível</li>
                 </ul>
             </td>
-            <td>Pode configurar as mesmas contas do passivo circulante, porém vencíveis após o término do exercício social.</td>
+            <td>
+                <ul style="list-style-type:none">
+                    <li><em>Pode configurar as mesmas contas do passivo circulante, porém vencíveis após o término do exercício social.</em></li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td>PATRIMÔNIO LÍQUIDO</td>
         </tr>
         <tr>
             <td>
-                <ul>
+                <ul style="list-style-type:none">
                     <li>Capital Social</li>
                     <li>Reservas de Capital</li>
                     <li>Reservas de Lucros</li>
@@ -507,7 +513,7 @@ A [Tabela 3](#table3) exemplifica um modelo de DFC e suas possíveis transaçõe
     </thead>
     <tbody>
         <tr>
-            <td colspan="2">FLUXOS OPERACIONAIS</td>
+            <td colspan="2" style="text-align:center"><strong>FLUXOS OPERACIONAIS</strong></td>
         </tr>
         <tr>
             <td>Resultado do exercício/período</td>
@@ -544,7 +550,7 @@ A [Tabela 3](#table3) exemplifica um modelo de DFC e suas possíveis transaçõe
             </td>
         </tr>
         <tr>
-            <td colspan="2">FLUXOS DE INVESTIMENTOS</td>
+            <td colspan="2" style="text-align:center"><strong>FLUXOS DE INVESTIMENTOS</strong></td>
         </tr>
         <tr>
             <td>Imobilizado</td>
@@ -573,7 +579,7 @@ A [Tabela 3](#table3) exemplifica um modelo de DFC e suas possíveis transaçõe
             </td>
         </tr>
         <tr>
-            <td colspan="2">FLUXOS DE FINANCIAMENTOS</td>
+            <td colspan="2" style="text-align:center"><strong>FLUXOS DE FINANCIAMENTOS</strong></td>
         </tr>
         <tr>
             <td><Capital</td>
@@ -603,7 +609,7 @@ A [Tabela 3](#table3) exemplifica um modelo de DFC e suas possíveis transaçõe
             </td>
         </tr>
         <tr>
-            <td colspan="2">VARIAÇÃO DAS DISPONIBILIDADES</td>
+            <td colspan="2" style="text-align:center"><strong>VARIAÇÃO DAS DISPONIBILIDADES</strong></td>
         </tr>
         <tr>
             <td colspan="2" style="text-align:center">Fonte: Adaptado de Ribeiro (2010)</td>
@@ -753,32 +759,32 @@ Entretando, Damodaran (2012), Póvoa (2012) e Reis (2023), falam que os FCFEs hi
     <tbody>
         <tr>
             <td>(+) Lucro Líquido do Exercício</td>
-            <td>LL</td>
+            <td><em>LL</em></td>
             <td>Já tendo sido realizado o pagamento de juros e amortizações.</td>
         </tr>
         <tr>
             <td>(+) Depreciação</td>
-            <td>DP</td>
+            <td><em>DP</em></td>
             <td>É adicionado de volta já que serviu apenas para efeito de cálculo da base tributária.</td>
         </tr>
         <tr>
             <td>(-) Despesas de capital</td>
-            <td>CAPEX</td>
+            <td><em>CAPEX</em></td>
             <td>Despesas de capital.</td>
         </tr>
         <tr>
             <td>(-) Variação da necessidade de capital de giro</td>
-            <td>&Delta;NCG</td>
+            <td><em>&Delta;NCG</em></td>
             <td>Os aumentos em estoque e em contas a receber reduzem a geração de caixa; os aumentos em contas a pagar aumentam a geração de caixa.</td>
         </tr>
         <tr>
             <td>(+) Captação de novos financiamentos</td>
-            <td>F</td>
+            <td><em>F</em></td>
             <td>Emissão de novas dívidas.</td>
         </tr>
         <tr>
             <td>(=) Fluxo de Caixa Livre para os Acionistas.</td>
-            <td>FCFE</td>
+            <td><em>FCFE</em></td>
             <td>Este é o caixa que sobra depois do atendimento de todas as necessidades. Se for positivo, representa um dividendo potencial</td>
         </tr>
         <tr>
@@ -844,23 +850,20 @@ Portanto, a equação recomendada para o cálculo do custo do capital próprio n
 
 O modelo de Fluxo de Caixa Livre para a Empresa, diferentemente do FCFE, busca estimar o valor intrínseco da empresa ou da firma ($VIF$), isto é, o valor considerando o capital total alocado na empresa, financiado pelo capital dos sócios e acionistas (capital próprio) e as dívidas e empréstimos dos credores (capital de terceiros). A fórmula do $VIF$ é análoga à do $VIM$.
 
-|     |     | (2.14) |
-| --- | --- | --- |
+<span id="eq2-14">$$ VIF = \sum_{t=1}^{n}{\frac{FCFF_{t}}{(1+r)^t}} + \frac{VT}{(1+r)^n} \tag{2.14} $$</span>
 
 Onde:
 
-- , neste modelo, é a taxa do custo de capital total da empresa;
-- é o valor terminal do fluxo de caixa para a empresa na perpetuidade.
+- $r$, neste modelo, é a taxa do custo de capital total da empresa;
+- $VT=\frac{FCFF_n(1+g)}{r-g}$é o valor terminal do fluxo de caixa para a empresa na perpetuidade.
 
 Por fim, para a obtenção do valor intrínseco da ação, é necessário retirar a dívida total da empresa do valor da firma e dividir a diferença pelo número total de ações.
 
-|     |     | (2.15) |
-| --- | --- | --- |
+<span id="eq2-15">$$ VIA = \frac{VIF-D}{N} \tag{2.15} $$</span>
 
 Para o cálculo dos FCFF históricos, é necessário considerar a dívida, já que estamos considerando tanto o capital próprio como de terceiros. Assim, na avaliação dos demonstrativos contábeis, ao invés de se partir do lucro líquido do exercício social, parte-se do EBITDA, por não considerar as deduções dos juros e das amortizações.
 
-|     |     | (2.16) |
-| --- | --- | --- |
+<span id="eq2-16">$$ FCFF = EBITDA(1-T) + DP \dot T - CAPEX - \Delta NCG \tag{2.16} $$</span>
 
 Em relação à formula geral (2.8), bastaria retirar a parcela FCF para obter o FCFF, ficando portanto:
 
