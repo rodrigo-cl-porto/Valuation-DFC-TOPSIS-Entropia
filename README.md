@@ -867,73 +867,64 @@ Para o cálculo dos FCFF históricos, é necessário considerar a dívida, já q
 
 Em relação à formula geral (2.8), bastaria retirar a parcela FCF para obter o FCFF, ficando portanto:
 
-|     |     | (2.17) |
-| --- | --- | --- |
+<span id="eq2-17">$$ FCFF = FCO + FCI \tag{2.17} $$</span>
 
 Além dessas adaptações em relação ao FCFE, é necessário salientar que a taxa a ser considerada deve levar em conta não só o custo do capital próprio, como também o de terceiros. Para isso, foi empregado o cálculo do WACC da empresa.
 
-#### WACC
+#### **WACC**
 
-O CMPC (Custo Médio Ponderado de Capital), como também é conhecido o WACC, estima o custo de capital da empresa considerando tanto o financiamento da empresa pelo capital dos sócios quanto o risco de alavancagem financeira pela tomada de empréstimos de capitais de terceiros. Para isso, é calculado um custo médio das fontes de capital, ponderados pelas suas respectivas proporções em relação ao capital total da empresa.
+O CMPC, como também é conhecido o WACC, estima o custo de capital da empresa considerando tanto o financiamento da empresa pelo capital dos sócios quanto o risco de alavancagem financeira pela tomada de empréstimos de capitais de terceiros. Para isso, é calculado um custo médio das fontes de capital, ponderados pelas suas respectivas proporções em relação ao capital total da empresa.
 
-Segundo Filho et al. (2008), considerando que uma empresa possua fontes de financiamento, com cada uma possuindo uma taxa de custo , a fórmula geral para o custo médio ponderado de capital da empresa deverá ser dada por:
+Segundo Filho et al. (2008), considerando que uma empresa possua fontes de financiamento, com cada uma possuindo uma taxa de custo $r_i$, a fórmula geral para o custo médio ponderado de capital da empresa deverá ser dada por:
 
-|     |     | (2.18) |
-| --- | --- | --- |
+<span id="eq2-18">$$ WACC = \frac{\sum_{i=1}^{n}{C_ir_i}}{\sum_{i=1}^{n}{C_i}} \tag{2.18} $$</span>
 
-Onde é o total financiado à empresa pela fonte .
+Onde $C_i$ é o total financiado à empresa pela fonte $i$.
 
-Portanto, considerando que as fontes de financiamento possam ser resumidas em capital próprio () e de terceiros (), com suas respectivas taxas de custo e , então a taxa mínima aceitável pelos acionistas deverá ser dada por:
+Portanto, considerando que as fontes de financiamento possam ser resumidas em capital próprio ($E$) e de terceiros ($D$), com suas respectivas taxas de custo $r_E$ e $r_D$, então a taxa mínima aceitável pelos acionistas deverá ser dada por:
 
-|     |     | (2.19) |
-| --- | --- | --- |
+<span id="eq2-19">$$ WACC = \frac{E}{E+D}r_E + \frac{D}{E+D}r_D(1-T) \tag{2.19} $$</span>
 
-O é calculado pelo modelo CAPM, como explicado em um tópico anterior. Neste caso, é necessário fazer uso do beta alavancado ao invés do desalavancado, uma vez que o risco da dívida deverá ser avaliado junto com o risco do próprio negócio. Vale comentar também que o termo representa a alíquota do imposto de renda pago pela empresa e, portanto, o fator representa o benefício fiscal que a empresa ganha sobre o cutos do capital de terceiros.
+O $r_E$ é calculado pelo modelo CAPM, como explicado em um tópico anterior. Neste caso, é necessário fazer uso do beta alavancado ao invés do desalavancado, uma vez que o risco da dívida deverá ser avaliado junto com o risco do próprio negócio. Vale comentar também que o termo representa a alíquota do imposto de renda pago pela empresa e, portanto, o fator $(1-T)$ representa o benefício fiscal que a empresa ganha sobre o cutos do capital de terceiros.
 
-Devido às desvantagens do uso do beta individual , apresentadas no tópico sobre CAPM, Póvoa (2012) propõe o uso de um _bottom-up_ beta () em seu lugar. Esse coeficiente se baseia na regra estatística de que o desvio padrão da média de betas individuais é sempre menor que o desvio-padrão médio dos betas individuais, uma vez que:
+Devido às desvantagens do uso do beta individual $\beta_i$, apresentadas no tópico sobre CAPM, Póvoa (2012) propõe o uso de um _bottom-up_ beta ($\hat{\beta}$) em seu lugar. Esse coeficiente se baseia na regra estatística de que o desvio padrão da média de betas individuais é sempre menor que o desvio-padrão médio dos betas individuais, uma vez que:
 
-|     |     | (2.20) |
-| --- | --- | --- |
+<span id="eq2-20">$$ \sigma(\overline{\beta_i}) = \frac{\overline{\sigma}(\beta_i)}{\sqrt{n}} \tag{2.20} $$</span>
 
 Onde:
 
-- é a média dos betas individuais;
-- é o desvio-padrão;
-- é o desvio-padrão médio;
-- é o número de observações.
+- $\overline{\beta_i}$ é a média dos betas individuais;
+- $\sigma$ é o desvio-padrão;
+- $\overline{\sigma}$ é o desvio-padrão médio;
+- $n$ é o número de observações.
 
-Para o cálculo do de uma ação, será necessário realizar a seguinte série de passos:
+Para o cálculo do $\hat{\beta_i}$ de uma ação, será necessário realizar a seguinte série de passos:
 
-1. Calcular os tradicionais de cada uma das ações das empresas que pertençam ao mesmo setor da empresa .
-2. Calcular o beta do setor a partir de uma soma ponderada dos de cada empresa, tendo como pesos os valores negociados no mercado de cada empresa .
+1. Calcular $\beta_i$ os tradicionais de cada uma das ações das empresas que pertençam ao mesmo setor da empresa $i$.
+2. Calcular o beta do setor a partir de uma soma ponderada dos $\beta_i$ de cada empresa, tendo como pesos os valores $VM_i$ negociados no mercado de cada empresa $i$.
 3. Calcular a proporção entre capital de terceiros e capital próprio médio do setor a partir da média ponderada, tendo como pesos o valor de mercado das empresas no setor.
 
-|     |     | (2.21) |
-| --- | --- | --- |
+<span id="eq2-21">$$ \overline{\frac{D}{E}} = \frac{\sum_{i=1}^{m}{VM_i}\frac{D_i}{E_i}}{\sum_{i=1}^{m}{VM_i}} \tag{2.21} $$</span>
 
-1. Uma vez que empresas com maior alavancagem financeiras, apresentam maior volatilidade, é necessário calcular o beta desalavancado do setor () por:
+4. Uma vez que empresas com maior alavancagem financeiras apresentam maior volatilidade, é necessário calcular o beta desalavancado do setor ($\beta_{d^{\text{setor}}}$) por:
 
-|     |     | (2.22) |
-| --- | --- | --- |
+<span id="eq2-22">$$ \beta_{d^{\text{setor}}} = \frac{\beta_{\text{setor}}}{1+(1-T) \overline{(\frac{D}{E}})}  \tag{2.22} $$</span>
 
-1. Realavancar o pela alavancagem financeira da empresa para finalmente obter o seu .
+5. Realavancar o $\beta_{d^{\text{setor}}}$ pela alavancagem financeira da empresa $i$ para finalmente obter o seu $\hat{\beta_i}$.
 
-|     |     | (2.23) |
-| --- | --- | --- |
+<span id="eq2-23">$$ \hat{\beta_i} =  \beta_{d^{\text{setor}}}[1 + (1-T)\frac{D_i}{E_i}] \tag{2.23} $$</span>
 
-Portanto, o custo de capital próprio recomendada por Póvoa (2012) passaria a ser dada por:
+Portanto, o custo de capital próprio $r_E$ recomendado por Póvoa (2012) passaria a ser dado por:
 
-|     |     | (2.24) |
-| --- | --- | --- |
+<span id="eq2-24">$$ r_E = R_f + \hat{\beta_i}(E[R_m] - R_f) \tag{2.24} $$</span>
 
-Por fim, o último _input_ necessário para calcular o WACC é a taxa de custo de capital de terceiros , que pode ser facilmente calculada pela razão:
+Por fim, o último _input_ necessário para calcular o WACC é a taxa de custo de capital de terceiros $r_D$, que pode ser facilmente calculada pela razão:
 
-|     |     | (2.25) |
-| --- | --- | --- |
+<span id="eq2-25">$$ r_D = \frac{J}{D} \tag{2.25} $$</span>
 
-Onde é o total das despesas financeiras.
+Onde $J$ é o total das despesas financeiras.
 
-### Avaliação Comparativa
+### **Avaliação Comparativa**
 
 A avaliação comparativa se trata de determinar o valor de um ativo comparando-o com outros ativos semelhantes. Por exemplo, para determinar o valor de um veículo, algumas pessoas poderiam pesquisar pelos preços de outros veículos semelhantes – veículos que sejam do mesmo modelo, tenham a cilindrada parecida, mesma tração ou com aproximadamente a mesma quantidade de metros cúbicos de espaço etc. –, calcular uma média e comparar com o preço cotado pelo veículo no mercado e verificar se o preço é razoável.
 
@@ -985,14 +976,13 @@ Segundo Kobori (2018), o ROE é um indicador de rentabilidade do dinheiro invest
 
 Portanto, ele é um importante indicador de rentabilidade para avaliar a eficiência da empresa na utilização de seus recursos próprios. Um ROE elevado sugere que a empresa está empregando seus recursos de maneira produtiva, enquanto um ROE baixo sinaliza problemas na gestão financeira do negócio ( STATUS INVEST, 2020). Neste trabalho, o seu cálculo se deu pela razão entre o lucro líquido dos últimos 12 meses e o patrimônio líquido da empresa.
 
-#### Média das variações dos lucros líquidos ()
+#### Média das variações dos lucros líquidos ($\overline{\Delta LL}$)
 
 Este indicador foi adotado como sendo a métrica de crescimento da empresa, uma vez que ele sugere se, na média, os lucros líquidos da empresa vem crescendo, se encontram estagnadas, ou se vem decrescendo ao longo do tempo.
 
 Neste trabalho, arbitrou-se por calcular a média aritmética das variações dos lucros das empresas nos últimos 5 anos, conforme a seguinte fórmula:
 
-|     |     | (2.26) |
-| --- | --- | --- |
+<span id="eq2-26">$$ \overline{\Delta LL} = \frac{\sum_{t=1}^{5}{{\Delta LL}_{t}}}{5} = \frac{\sum_{t=1}^{5}{\frac{LL_t}{LL_{t-1}}-1}}{5} \tag{2.26}$$</span>
 
 #### Dívida Líquida / Patrimônio Líquido (DL/PL)
 
@@ -1028,7 +1018,7 @@ Parecido com o ILC, o ILG avalia todos os ativos liquidáveis da empresa frente 
 
 Como será explicado em um tópico posterior, o ILG foi empregado neste trabalho apenas para medir a liquidez dos bancos.
 
-### Apoio Multicritério para Tomada de Decisão (DCMD)
+### **Apoio Multicritério para Tomada de Decisão (DCMD)**
 
 Os métodos multicritério geralmente auxiliam na tomada de decisão de cenários em há várias alternativas a serem consideradas, com cada uma possuindo vários critérios a serem determinados, ponderados e analisados, objetiva ou subjetivamente, pelo tomador de decisão.
 
@@ -1040,50 +1030,78 @@ Diversos métodos multicritérios foram desenvolvidos para atender a uma varieda
 
 O método multicritério TOPSIS, introduzido por Hwang e Yoon (1981), é um procedimento de classificação de alternativas com base em sua proximidade à solução ideal positiva (PIS) e à solução ideal negativa (NIS), também conhecidas respectivamente por soluções ideal e anti-ideal. PIS e NIS representam vetores formados pelas melhores e piores pontuações em cada critério, respectivamente. Portanto, não se referem a alternativas reais presentes na matriz decisão, mas a dois pontos de referência fictícios que são utilizados para calcular as distâncias euclidianas entre esses pontos e cada uma das alternativas.
 
-Para a execução do algoritmo do TOPSIS, é necessário que o tomador de decisão inventarie um conjunto de alternativas com cada um de seus critérios quantificados segundo a sua utilidade e com seus pesos definidos por . Desta forma, obtém-se a matriz de decisão , composta por valores , com e .
+Para a execução do algoritmo do TOPSIS, é necessário que o tomador de decisão inventarie um conjunto de alternativas $A = [A_1, \dots, A_n]$ com cada um de seus critérios $C=[C_1, \dots, C_m]$ quantificados segundo a sua utilidade $U(C)$ e com seus pesos definidos por $w = [w_1, \dots, w_m]$. Desta forma, obtém-se a matriz de decisão $D_{n \times m}$, composta por valores $v_{ij} = U(C)$, com $i \in \{1, \dots, n\}$ e $j \in \{1, \dots, m\}$.
 
-|     |     | (2.27) |
-| --- | --- | --- |
+<span id="eq2-26">
 
-Além disso, o tomador de decisão deve ainda estabelecer um vetor de impactos para cada um dos critérios, caso estes não tenham sido considerados nas respectivas funções de utilidade. Se um critério é considerado melhor quando seu valor aumenta, então . Caso ele seja pior quanto maior o seu valor, então .
+$$
+D_{n \times m} =
+\begin{matrix}
+    \ & \begin{matrix} C_1 & C_2 & \dots & C_m\end{matrix} \\
+    \begin{matrix}A_1 \\ A_2 \\ \vdots \\ A_n\end{matrix} &
+    \begin{bmatrix}
+        v_{11} & v_{12} & \dots  & v_{1m} \\
+        v_{21} & v_{22} & \dots  & v_{2m} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        v_{n1} & v_{n2} & \dots  & v_{nm}
+    \end{bmatrix}
+\end{matrix}
+\tag{2.27}
+$$
 
-Uma das maneiras de se interpretar o impacto de um critério é considerá-lo como sendo o sinal algébrico da primeira derivada da função utilidade ao longo de todo o seu domínio. Por esse motivo, essa interpretação do impacto só será válido se a função utilidade para o critério for monotônico, isto é, se ele for estritamente crescente ou estritamente decrescente em todo o seu domínio, para que o sinal da primeira derivada de seja o mesmo em todo o seu domínio.
+</span>
 
-Um exemplo ilustrativo que ressalta a complexidade na definição de impacto para um critério é o que ocorre com o indicador P/L. No caso de P/L > 0, seu impacto é negativo, já que quanto menor o P/L de uma ação, mais atrativa ela se torna para investimento, pois significa que ela está mais barata. No entanto, essa interpretação muda quando P/L < 0, indicando que a empresa apresentou prejuízo nos últimos 12 meses, tornando o indicador tão indesejável quanto menor for o seu valor. Em resumo, a utilidade do indicador P/L não é monotônica, visto que exibe impacto negativo no intervalo e impacto positivo em
+Além disso, o tomador de decisão deve ainda estabelecer um vetor de impactos $I = [I_1, I_2, \dots, I_m]$ para cada um dos $m$ critérios, caso estes não tenham sido considerados nas respectivas funções de utilidade. Se um critério é considerado melhor quando seu valor aumenta, então $I_j = +1$. Caso ele seja pior quanto maior o seu valor, então $I_j = -1$.
 
-Uma maneira de contornar essa situação é limitar o domínio da função utilidade para um intervalo em que a função é monotônica. Considerar apenas as ações com P/L > 0 para compor o conjunto de alternativas da matriz de decisão é um exemplo disso. Outra maneira seria redefinir a função utilidade de forma que ela passe a ser monotônica. Por exemplo, não considerar o P/L, mas sim o seu inverso, L/P (lucro dos últimos 12 meses por ação dividido pelo preço da ação), é uma alternativa para isso, já que criar-se-ia um indicador com impacto positivo em todo o conjunto dos números reais. Como será visto na metodologia, a inversão dos indicadores P/L e P/VP serão arbitrados pelo autor para a compor os seus antes de aplicar o TOPSIS.
+Uma das maneiras de se interpretar o impacto $I_j$ de um critério $C_j$ é considerá-lo como sendo o sinal algébrico da primeira derivada da função utilidade $U_j:C_j \in \mathbb{R} \rightarrow \mathbb{R}$ ao longo de todo o seu domínio. Por esse motivo, essa interpretação do impacto $I_j$ só será válido se a função utilidade para o critério $C_j$ for monotônico, isto é, se ele for estritamente crescente ou estritamente decrescente em todo o seu domínio, para que o sinal da primeira derivada de $U_j$ seja o mesmo em todo o seu domínio.
 
-Após a definição da matriz , os pesos são normalizados conforme a equação a seguir:
+Um exemplo ilustrativo que ressalta a complexidade na definição de impacto para um critério é o que ocorre com o indicador P/L. No caso de P/L > 0, seu impacto é negativo, já que quanto menor o P/L de uma ação, mais atrativa ela se torna para investimento, pois significa que ela está mais barata. No entanto, essa interpretação muda quando P/L < 0, indicando que a empresa apresentou prejuízo nos últimos 12 meses, tornando o indicador tão indesejável quanto menor for o seu valor. Em resumo, a utilidade do indicador P/L não é monotônica, visto que exibe impacto negativo no intervalo $(0, +\infty)$ e impacto positivo em $(-\infty, 0)$.
 
-|     |     | (2.28) |
-| --- | --- | --- |
+Uma maneira de contornar essa situação é limitar o domínio da função utilidade para um intervalo em que a função é monotônica. Considerar apenas as ações com P/L > 0 para compor o conjunto de alternativas da matriz de decisão é um exemplo disso. Outra maneira seria redefinir a função utilidade de forma que ela passe a ser monotônica. Por exemplo, não considerar o P/L, mas sim o seu inverso, L/P (lucro dos últimos 12 meses por ação dividido pelo preço da ação), é uma alternativa para isso, já que criar-se-ia um indicador com impacto positivo em todo o conjunto dos números reais. Como será visto na metodologia, a inversão dos indicadores P/L e P/VP serão arbitrados pelo autor para a compor os seus $U(C)$ antes de aplicar o TOPSIS.
 
-Com o vetor de pesos normalizados calculados, os valores da matriz serão normalizados pela fórmula:
+Após a definição da matriz $D_{n \times m}$, os pesos são normalizados conforme a equação a seguir:
 
-|     |     | (2.29) |
-| --- | --- | --- |
+<span id="eq2-28">$$ \overline{w}_j = \frac{w_j}{\sum_{j=1}^{m}{w_j}} \tag{2.28}$$</span>
+
+Com o vetor de pesos normalizados $ \overline{w}_j = [ \overline{w}_1,  \overline{w}_2, \dots,  \overline{w}_m]$ calculados, os valores da matriz $D_{n \times m}$ serão normalizados pela fórmula:
+
+<span id="eq2-29">$$ \overline{v}_{ij} = \frac{I_jv_{ij}}{\sqrt{\sum_{i=1}^{n}{v^{2}_{ij}}}} \tag{2.29}$$</span>
 
 Obtendo, assim, a matriz de decisão normalizada .
 
-|     |     | (2.30) |
-| --- | --- | --- |
+<span id="eq2-30">
 
-A partir de , serão obtidos os vetores das soluções ideal (PIS) e anti-ideal (NIS) a partir dos valores máximos e mínimos presentes em cada um dos critérios .
+$$
+\overline{D}_{n \times m} =
+\begin{matrix}
+    \ & \begin{matrix} C_1 & \dots & C_j & \dots & C_m\end{matrix} \\
+    \begin{matrix}A_1 \\ \vdots \\ A_i \\ \vdots \\ A_n\end{matrix} &
+    \begin{bmatrix}
+        \overline{v}_{11} & \dots & \overline{v}_{1j} & \dots  & \overline{v}_{1m} \\
+        \vdots & \ddots & \vdots & \ddots & \vdots \\
+        \overline{v}_{i1} & \dots & \overline{v}_{ij} & \dots  & \overline{v}_{im} \\
+        \vdots & \ddots & \vdots & \ddots & \vdots \\
+        \overline{v}_{n1} & \dots & \overline{v}_{nj} & \dots  & \overline{v}_{nm}
+    \end{bmatrix}
+\end{matrix}
+\tag{2.30}
+$$
 
-|     |     | (2.31) |
-| --- | --- | --- |
-|     |     | (2.32) |
+</span>
 
-Usando PIS e NIS como referências, calcula-se as distâncias euclidianas até a solução ideal () e a anti-ideal () para cada uma das alternativas .
+A partir de $\overline{D}_{n \times m}$, serão obtidos os vetores das soluções ideal (PIS) e anti-ideal (NIS) a partir dos valores máximos e mínimos presentes em cada um dos critérios $C_j$.
 
-|     |     | (2.33) |
-| --- | --- | --- |
-|     |     | (2.34) |
+<span id="eq2-31">$$PIS = [\text{Max}_j\{\overline{v}_{ij}\}| \forall j \in \{1, \dots, m\}] = [\overline{v}_{1}^{+}, \dots, \overline{v}_{j}^{+}, \dots, \overline{v}_{m}^{+}] \tag{2.31}$$</span>
+<span id="eq2-32">$$NIS = [\text{Min}_j\{\overline{v}_{ij}\}| \forall j \in \{1, \dots, m\}] = [\overline{v}_{1}^{-}, \dots, \overline{v}_{j}^{-}, \dots, \overline{v}_{m}^{-}] \tag{2.32}$$</span>
 
-Finalmente, calcula-se o coeficiente de similaridade para cada uma das alternativas , a fim de que elas sejam ordenadas em ordem decrescente de .
+Usando PIS e NIS como referências, calcula-se as distâncias euclidianas até a solução ideal ($d_{i}^{+}$) e a anti-ideal ($d_{i}^{-}$) para cada uma das alternativas $A_i$.
 
-|     |     | (2.35) |
-| --- | --- | --- |
+<span id="eq2-33">$$ d_{i}^{+} = \sqrt{\sum_{j=1}^{m}{(\overline{v}_{ij} - \overline{v}_{j}^{+})^2}} \tag{2.33}$$</span>
+<span id="eq2-34">$$ d_{i}^{-} = \sqrt{\sum_{j=1}^{m}{(\overline{v}_{ij} - \overline{v}_{j}^{-})^2}} \tag{2.34}$$</span>
+
+Finalmente, calcula-se o coeficiente de similaridade ${CC}_{i}$ para cada uma das alternativas $A_i$, a fim de que elas sejam ordenadas em ordem decrescente de ${CC}_{i}$.
+
+<span id="eq2-35">$$ {CC}_{i} = \frac{d_{i}^{-}}{d_{i}^{-}+d_{i}^{+}} \tag{2.35}$$</span>
 
 #### Método da Entropia
 
@@ -1093,41 +1111,38 @@ Como alternativa para a definição dos pesos sem a necessidade da intervenção
 
 Conforme explicado no trabalho de Hein _et al_. (2013), o conceito de entropia foi definido pelo físico Rudolf Clausius em 1865 como medida do grau de irreversibilidade de um sistema termodinâmico fechado. Em 1948, esse conceito foi ampliado para a área da Teoria da Informação, fundada por Claude Shannon, quem redefiniu a entropia para uma variável aleatória discreta como sendo:
 
-|     |     | (2.36) |
-| --- | --- | --- |
+<span id="eq2-36">$$ S[X] = -\sum_{i=1}^{n}{p_i(x)\ln (p_i(x))} \tag{2.36}$$</span>
 
-Onde é a probabilidade de .
+Onde $0 \le p_i(x) \le 1$ é a probabilidade de $X=i$.
 
-Por convenção, caso para algum valor , então teremos que . De fato, esse é o valor para qual a expressão converge quando tende a 0, como demonstrado a seguir:
+Por convenção, caso $p_i(x) = 0$ para algum valor $i$, então teremos que $p_i(x)\text{ln}(p_i(x)) = 0$. De fato, esse é o valor para qual a expressão converge quando $p$ tende a 0, como demonstrado a seguir:
 
-Já no caso de uma variável aleatória contínua, com função de distribuição de probabilidade , a sua entropia é definida por.
+$$ \lim_{p \to 0^{+}}{p \ln p} = \lim_{p \to 0^{+}}{\frac{\ln p}{1/p}} = -\frac{\infty}{\infty} \therefore \lim_{p \to 0^{+}}{\frac{\ln p}{1/p}} = \lim_{p \to 0^{+}}{\frac{\frac{d}{dp}(\ln p)}{\frac{d}{dp}(1/p)}} = \lim_{p \to 0^{+}}{\frac{1/p}{-1/p^2}} = \lim_{p \to 0^{+}}{-p} = 0$$
 
-|     |     | (2.37) |
-| --- | --- | --- |
+Já no caso de uma variável aleatória contínua, com função de distribuição de probabilidade $p(x)$, a sua entropia é definida por:
+
+<span id="eq2-37">$$ S[X] = -\int_{0}^{\infty}{p_i(x) \ln (p_i(x))} \tag{2.37}$$</span>
 
 Conforme explicado por Hein _et al_. (2013), quanto maior for a diferenciação dos valores de um dado atributo (isto é, quanto menor for a sua entropia), maior é o seu poder informacional para a determinação de uma decisão. Para ser mais ilustrativo, em um exemplo de tomada de decisão da compra de uma casa, em que o preço de todas as casas é o mesmo, tratar-se-ia de um critério com o mais alto grau de entropia, pois o preço da moradia não informa nenhuma discriminação entre as alternativas que possibilite ao tomador de decisão escolher a melhor casa. Nesses casos, o critério “preço” teria a máxima entropia e seria descartada da matriz de decisão.
 
-O processo para a determinação dos pesos pelo método da entropia, conforme apresentado por Hein _et al_. (2013), se inicia com a normalização dos valores da matriz de decisão em relação a cada um dos critério por:
+O processo para a determinação dos pesos $w_j$ pelo método da entropia, conforme apresentado por Hein _et al_. (2013), se inicia com a normalização dos valores da matriz de decisão $D_{n \times m}$ em relação a cada um dos critérios $C_j$ por:
 
-|     |     | (2.38) |
-| --- | --- | --- |
+<span id="eq2-38">$$ \overline{v}_{ij} = \frac{v_{ij}}{\text{Max}_j\{v_{ij}\}} \tag{2.38}$$</span>
 
-No entanto, vale salientar que a fórmula acima só é aplicável quando todos os respectivos a um critério são positivos. No caso de haver alguns , a normalização de deve ser feita de forma a torna todos os valores em números positivos, uma vez que o cálculo da entropia de um critério envolve o uso da função logarítmica, cujo domínio corresponde ao conjunto dos números reais positivos. Portanto, nesta etapa, adotou-se a seguinte Normalização Min-Máx para que os valores fossem reescalados para o intervalo (0, 1\].
+No entanto, vale salientar que a fórmula 2.38 só é aplicável quando todos os respectivos $v_{ij}$ a um critério $C_j$ são positivos. No caso de haver alguns $v_{ij} \le 0$, a normalização de $D_{n \times m}$ deve ser feita de forma a torna todos os valores $v_{ij}$ em números positivos, uma vez que o cálculo da entropia de um critério envolve o uso da função logarítmica, cujo domínio corresponde ao conjunto dos números reais positivos. Portanto, nesta etapa, adotou-se a seguinte Normalização Min-Máx para que os valores $v_{ij}$ fossem reescalados para o intervalo $(0, 1]$.
 
-|     |     | (2.39) |
-| --- | --- | --- |
+<span id="eq2-39">$$ \overline{v}_{ij} = \frac{v_{ij} - \text{Min}_j\{v_{ij}\}}{\text{Max}_j\{v_{ij}\} - \text{Min}_j\{v_{ij}\}} \tag{2.39}$$</span>
 
-Com os dados normalizados, calcula-se a entropia do critério como sendo:
+Com os dados normalizados, calcula-se a entropia $s_j$ do critério $j$ como sendo:
 
-|     |     | (2.40) |
-| --- | --- | --- |
+<span id="eq2-40">$$ s_j = -\frac{1}{s_{\text{Max}}} \sum_{i=1}^{n}{\frac{\overline{v}_{ij}}{V_j} \ln (\frac{\overline{v}_{ij}}{V_j})} \tag{2.40}$$</span>
 
 Onde:
 
-- é a entropia máxima que um critério pode alcançar;
-- corresponde ao somatório de todos os valores normalizados do critério .
+- $s_{\text{Max}} = \ln(n)$ é a entropia máxima que um critério pode alcançar;
+- $V_j = \sum_{i=1}^{n}{\overline{v}_{ij}}$ corresponde ao somatório de todos os valores normalizados do critério $j$.
 
-Como explicado anteriormente, quanto maior a entropia menor será o poder informacional do critério . Assim, o seu peso final deverá ser proporcional a , e não a , e normalizado para assegurar que e (HEIN _et al_., 2013). Portanto, o seu cálculo deverá ser dado por:
+Como explicado anteriormente, quanto maior a entropia $s_j$ menor será o poder informacional do critério $j$. Assim, o seu peso final $\lambda_j$ deverá ser proporcional a $1-s_j$, e não a $s_j$, e normalizado para assegurar que $0 \le \lambda_j \le 1$ e que $\sum_{j=1}^{m}{\lambda_j} = 1$ (HEIN _et al_., 2013). Portanto, o seu cálculo deverá ser dado por:
 
 |     |     | (2.41) |
 | --- | --- | --- |
