@@ -653,7 +653,7 @@ Donde o investidor pode estimar a margem de segurança como sendo:
 
 $$
 \begin{array}{lr}
-    MS = \frac{VIA - P}{P} \times 100\% & \text{(2.2)}
+    MS = \frac{VIA - P}{P} \times 100 \text{\%} & \text{(2.2)}
 \end{array}
 $$
 
@@ -1701,7 +1701,7 @@ Com os dados adquiridos, busca-se uma compreensão aprofundada para extrair os p
 
 Dentre as principais inconsistências percebidas ao extrair as informações descritas na [Tabela 6](#table6) estava a ausência de ajuste dos preços de fechamento das cotações hisóricas das ações. Inicialmente, as cotações estavam sendo extraídas dos dados da B3 a fim de calcular os retornos mensais históricos das ações, os quais serão necessários para calcular os seus $\beta_i$ e, por conseguinte, o custo de capital próprio $r_E$. No entanto, ao calculá-los, percebeu-se que as cotações de fechamento das ações não estavam devidamente ajustadas segundo fatos societários que acarretam na mudança do preço teórico da ação, tais como desdobramentos, agrupamentos, subscrições, bonificações e distribuição de dividendos, o que resultava em distorções nos seus retornos.
 
-Por exemplo, uma ação que estava sendo negociado por R$ 100,00 e sofresse um desdobramento 1:2 (1 ação se divide em 2) deve ter os seu preço de fechamento teórico ajustado para R$ 50,00. Portanto, caso no dia logo após esse desdobramento o seu preço feche por R$ 52,00, a variação daquele dia deve ser de $\frac{52}{50}-1=4\%$. No entanto, como os fechamentos da B3 não estavam ajustados, a mesma ação teria o retorno daquele dia calculado como $\frac{52}{100}-1 = -48\%$, o que é incorreto. Por conta disso, viu-se que as séries históricas fornecidas pela B3 não seriam adequadas e necessitou-se de uma outra fonte de dados que fornecesse os preços de fechamento ajustados para o cálculo adequado dos retornos, sendo a melhor opção encontrada o Yahoo! Finance. Apenas por questão de conveniência, apenas os tickers cujas cotações históricas foram encontradas no Yahoo! Finance para mais da metade do período histórico considerado comporam a amostra para a proposta do modelo de _valuation_.
+Por exemplo, uma ação que estava sendo negociado por R$ 100,00 e sofresse um desdobramento 1:2 (1 ação se divide em 2) deve ter os seu preço de fechamento teórico ajustado para R$ 50,00. Portanto, caso no dia logo após esse desdobramento o seu preço feche por R$ 52,00, a variação daquele dia deve ser de $\frac{52}{50}-1=4\text{\%}$. No entanto, como os fechamentos da B3 não estavam ajustados, a mesma ação teria o retorno daquele dia calculado como $\frac{52}{100}-1 = -48\text{\%}$, o que é incorreto. Por conta disso, viu-se que as séries históricas fornecidas pela B3 não seriam adequadas e necessitou-se de uma outra fonte de dados que fornecesse os preços de fechamento ajustados para o cálculo adequado dos retornos, sendo a melhor opção encontrada o Yahoo! Finance. Apenas por questão de conveniência, apenas os tickers cujas cotações históricas foram encontradas no Yahoo! Finance para mais da metade do período histórico considerado comporam a amostra para a proposta do modelo de _valuation_.
 
 Uma outra inconsistência percebida foi a existência de incorreções nos valores dos capitais sociais das empresas nos FREs disponibilizados pela CVM, cujos valores não correspondiam ao seu valor de mercado negociado no último dia do ano. Também foi visto que a quantidade de ações para alguns tickers se diferia da quantidade de papéis que de fato compunham o seu capital social em alguns anos, mesmo não havendo fatos sociais que justificassem essa divergência (agrupamentos, desdobramentos, bonificações, subscrições etc.). Houve até mesmo registros em que constavam uma quantidade nula de papéis, tanto para ações ordinárias quanto para as preferenciais, mesmo quando constava um capital social não nulo. Apesar da ocorrência de inconsisências na quantidade de papéis ter sido rara, foi arbitrado que os valores de capitais sociais a serem consideradas seria o seu próprio valor de mercado, resultado do produto entre o preço de fechamento ajustado do último dia do ano e o número de ações. No caso de a quantidade de ações estiver zerada mesmo quando o capital social não fosse nulo, então utilizava-se o próprio capital social constado na FRE, uma vez que não seria possível calcular o seu valor de mercado.
 
@@ -1904,7 +1904,7 @@ Dada às algumas inconsistências encontradas nas quantidades de ações de cada
 
 $$
 \begin{array}{lr}
-    MS = \frac{VIM-VM}{VM} 100\% & \text{(3.1)}
+    MS = \frac{VIM-VM}{VM} 100\text{\%} & \text{(3.1)}
 \end{array}
 $$
 
@@ -1932,7 +1932,7 @@ Após o cálculo dos indicadores e de seus pesos, o TOPSIS se encarrega de calcu
 
 $$
 \begin{array}{lr}
-    f_A = (2 \cdot CC - 1) \cdot 100\% & \text{(3.3)}
+    f_A = (2 \cdot CC - 1) \cdot 100\text{\%} & \text{(3.3)}
 \end{array}
 $$
 
