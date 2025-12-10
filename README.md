@@ -633,7 +633,9 @@ Dado esse contexto, uma pessoa pode chegar à conclusão de que o processo de _v
 
 Existem vários tipos de modelos de _valuation_ e a sua complexidade aceitada dependerá majoritariamente da relação custo-benefício entre o tempo necessário para a sua realização e a sua precisão desejada. Um exemplo simples, proposta por Graham (2016), envolve a determinação do valor intrínseco da ação ($VIA$) pela equação:
 
-$$ VIA = \sqrt{22.5 \times LPA \times VPA} \tag{2.1} $$
+```math
+VIA = \sqrt{22.5 \times LPA \times VPA} \tag{2.1}
+```
 
 <span id="eq2-1">$$ VIA = \sqrt{22.5 \times LPA \times VPA} \tag{2.1} $$</span>
 
