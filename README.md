@@ -154,7 +154,7 @@ Dentre os ativos negociados no mercado financeiro, as ações são os que possue
 
 |<span id="graphic1">Gráfico 1</span> – Rentabilidades reais dos ativos no mercado dos EUA, em escala logarítmica, 1802-2012|
 |:---:|
-|![Gráfico 1](https://github.com/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/blob/main/docs/assets/graphic1.png)|
+|![Gráfico 1](/docs/assets/graphic1.png)|
 |Fonte: Siegel (2015)|
 
 O [Gráfico 1](#graphic1) apresenta, em escala logarítmica, a rentabilidade do conjunto de ativos considerados no estudo de Siegel (2015) e evidencia que as ações auferiram o maior retorno do período, superando notoriamente o crescimento dos outros ativos. Enquanto US$ 1,00 investido em ações em 1802 teria rentabilizado mais de US$ 700 mil, com crescimento médio anual de 6,6% acima da inflação, a segunda maior rentabilidade real seria a da renda fixa, em que US$ 1,00 em 1802 teriam auferido apenas quase US$ 1,8 mil de lucro ao longo de mais de dois séculos, a uma média de 3,6% ao ano. Outro ponto interessante é que a rentabilidade das ações, na escala logarítmica, segue uma notória tendência linear crescente, enquanto no restante dos ativos, tal tendência não foi claramente observada.
