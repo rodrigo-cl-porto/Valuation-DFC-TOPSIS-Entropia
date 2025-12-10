@@ -152,8 +152,6 @@ Avaliar com precisão o valor justo de um ativo é uma tarefa imprescindível pa
 
 Dentre os ativos negociados no mercado financeiro, as ações são os que possuem o maior potencial de valorização no longo prazo, como apontado por Siegel (2015). Ele analisou a rentabilidade real das principais aplicações financeiras estadunidenses ao longo dos últimos 210 anos, verificando o quanto o investimento de US$ 1,00 em 1802, em cada um dos principais conjuntos de ativos do mercado, valeria em 2012.
 
-![Gráfico 1](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/graphic1.png)
-
 |<span id="graphic1">Gráfico 1</span> – Rentabilidades reais dos ativos no mercado dos EUA, em escala logarítmica, 1802-2012|
 |:---:|
 |![Gráfico 1](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/graphic1.png)|
@@ -165,17 +163,17 @@ Além disso, ainda segundo Siegel (2015, p. 66), as ações são os ativos que a
 
 |<span id="graphic2">Gráfico 2</span> – Retornos reais máximos e mínimos das ações, renda fixa e tesouro ao longo dos anos|
 |:---:|
-|![Gráfico 2](/docs/assets/graphic2.png)|
+|![Gráfico 2](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/graphic2.png)|
 |Fonte: Siegel (2015)|
 
 Além disso, ao definir que o risco de um ativo pode ser determinado pelo seu desvio-padrão dos retornos reais anuais médios sua série histórica, é possível ver pelo [Gráfico 3](#graphic3) que o desvio padrão do retorno acionário supera o dos títulos públicos e de renda fixa na primeira década. Entretando, o risco acionário se torna menor do que os outros dois após esse período, não condizendo com o risco estimado pela hipótese do passeio aleatório (SIEGEL, 2015).
 
 |<span id="graphic3">Gráfico 3</span> – Desvio padrão dos retornos reais médios das ações, dos títulos de longo prazo e das letras em vários horizontes de investimento: dados históricos e hipótese do passeio aleatório, 1802-2012|
 |:---:|
-|![Gráfico 3](/docs/assets/graphic3.png)|
+|![Gráfico 3](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/graphic3.png)|
 |Fonte: Siegel (2015)|
 
-Siegel (2015) alerta que, pelo [Gráfico 3](/docs/assets/graphic3.png), não está afirmando que o risco das ações diminui à medida que o tempo passa. Na verdade, o que ocorre é que o desvio padrão dos retornos totais das ações aumenta com o tempo, porém a um ritmo progressivamente mais lento do que o dos títulos ou da renda fixa. Isso é atribuído à incerteza quanto à inflação, a qual leva a um rápido aumento da volatilidade dos ativos mais conservadores à medida que o período se estende (SIEGEL, 2015).
+Siegel (2015) alerta que, pelo [Gráfico 3](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/graphic3.png), não está afirmando que o risco das ações diminui à medida que o tempo passa. Na verdade, o que ocorre é que o desvio padrão dos retornos totais das ações aumenta com o tempo, porém a um ritmo progressivamente mais lento do que o dos títulos ou da renda fixa. Isso é atribuído à incerteza quanto à inflação, a qual leva a um rápido aumento da volatilidade dos ativos mais conservadores à medida que o período se estende (SIEGEL, 2015).
 
 Assim, fica evidente que as ações são as mais ideais para investimentos de longo prazo. Não obstante, tal conclusão não pode ser estendida para o mercado brasileiro, uma vez que não se tem registro de dados financeiros com intervalo de tempo tão longo quanto o dos EUA. Porém, trabalhos de Borfe e Schwerz (2018), Duarte (2019), Hendges e Rodrigues (2021) e Bainha e Sodré (2022) dão ao menos alguns leves indícios de que as rentabilidades das ações brasileiras superaram as da renda fixa ou que foram menos voláteis que a renda fixa em certos períodos.
 
@@ -1496,7 +1494,7 @@ A metodologia adotada para este trabalho envolve as etapas do processo do CRISP-
 
 |<span id="figure1">Figura 1</span> – Fases do modelo CRISP-DM|
 |:---:|
-|![Figura 1](/docs/assets/figure1.png)|
+|![Figura 1](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/figure1.png)|
 |Fonte: CHAPMAN, 2000|
 
 Como apresentado pela [Figura 1](#figure1), o CRISP-DM é constituído por seis fases, os quais serão explicadas a seguir, junto com os detalhamentos deste trabalho.
@@ -1519,7 +1517,7 @@ Uma qualidade notável do clássico tripé é o fato de sempre haver um _trade-o
 
 |<span id="figure2">Figura 2</span> – Tripé do investidor|
 |:---:|
-|![Figura 2](/docs/assets/figure2.png)|
+|![Figura 2](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/figure2.png)|
 |Fonte: Elaboração própria|
 
 Porém, nada impede de um investidor inserir outros objetivos para a escolha de ações, tais como a eficiência financeira e operacional dos negócios, a sua sustentabilidade, a preocupação da empresa com questões ambientais e sociais, ter boa governança corporativa e bom relacionamento com os _stakeholders_ etc.
@@ -1957,7 +1955,7 @@ Com os $VIM$s obtidos, uma margem de segurança $MS$ é calculada e as ações s
 
 |<span id="figure3">Figura 3</span> – Fluxograma ETL da proposta de _valuation_|
 |:---:|
-|![Figura 3](/docs/assets/figure3.png)|
+|![Figura 3](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/figure3.png)|
 |Fonte: Elaboração própria|
 
 Após o cálculo das margens seguranças após a aplicação do TOPSIS, viu-se que as mesmas apresentavam valores super ou sobre valorizados para algumas ações, havendo empresas com $VIM$s avaliados em centenas de vezes o seu valor de mercado ou correspondendo a milésimos de seu valor de mercado. As margens de segurança foram calculadas também para logo após a avaliação intrínseca do DFC e viu-se que a partir dali já havia essas distorções.
@@ -2233,7 +2231,7 @@ Ao final da realização do _backtest_, comparou-se os retornos das carteiras se
 
 |<span id="graphic4">Gráfico 4</span> – Retornos das Carteiras Selecionadas vs Retornos do Ibovespa|
 |:---:|
-|![Gráfico 4](/docs/assets/figure4.png)|
+|![Gráfico 4](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/figure4.png)|
 |Fonte: Elaboração própria|
 
 Pelos resultados do [Gráfico 4](#graphic4), viu-se que as carteiras selecionadas superam o Ibovespa em metade dos anos do período analisado, não sendo portanto possível chegar a uma conclusão sobre a contribuição do método TOPSIS quanto à consistência em superar o principal índice de mercado brasileiro no longo prazo. Contudo, ao se comparar os retornos total e médio ao longo dos anos entre as carteiras selecionadas (345,70% e 20,54% a.a., respectivamente) e o Ibovespa (209,43% e 15,17% a.a., respectivamente), é possível verificar que as rentabilidades da primeira superam as da última. Tais retornos foram calculados segundo as [Equações 3.5](#eq3-5) e [3.6](#eq3-6), respectivamente. Como as rentabilidades totais + 1 foram positivas para ambas as carteiras, foi possível comparar os seus retornos médios pela média geométrica no lugar da aritmética.
@@ -2425,7 +2423,7 @@ Onde:
 
 |<span id="graphic5">Gráfico 5</span> – Retornos dos modelos vs Retornos do Ibovespa|
 |:---:|
-|![Gráfico 5](/docs/assets/graphic5.png)|
+|![Gráfico 5](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/graphic5.png)|
 |Fonte: Elaboração própria|
 
 Pelos resultados obtidos, é possível ver que o modelo TOPSIS Entropia foi o que mais teve êxito em superar o Ibovespa, batendo o seu retorno em 6 dos 8 anos do período simulado, o que indicou ser o modelo mais adequado para o investidor que vise ganhos acima do mercado consistentes. Infelizmente, o mesmo não pôde ser concluído para o modelo FCD-TOPSIS Entropia, originalmente proposto, que só superou o Ibovespa em metade dos anos, o que não foi o suficiente para concluir se ele é eficaz em bater os retornos do mercado com consistência no longo prazo. O mesmo resultado inconclusivo foi encontrado para o FCD-TOPSIS, sem o método da Entropia. Curiosamente, os modelos que utilizaram os métodos separadamente (apenas o FCD ou o apenas o TOPSIS), obtiveram uma eficácia maior do que quando os dois foram empregados conjuntamente, superando o mercado em 5 dos 8 anos. Porém, essa pequena diferença não possibilitou concluir se estes modelos mais simples são mais eficazes no longo prazo do que os que aplicam ambos.
