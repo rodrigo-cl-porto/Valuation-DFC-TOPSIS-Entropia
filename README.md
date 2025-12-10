@@ -113,9 +113,8 @@ _Aswath Damodaran_
 1. [Tabela 6 – Conjunto de dados utilizados](#table6)
 1. [Tabela 7 – Indicadores fundamentalistas utilizadas no TOPSIS](#table7)
 1. [Tabela 8 – Definição por parte da função](#table8)
-1. [Tabela 9 – Carteiras Selecionadas (2016 – 2019)](#table9)
-1. [Tabela 10 – Carteiras Selecionadas (2020 – 2023)](#table10)
-1. [Tabela 11 – Retornos das carteiras dos modelos de backtest](#table11)
+1. [Tabela 9 – Carteiras Selecionadas (2016 - 2023)](#table9)
+1. [Tabela 10 – Retornos das carteiras dos modelos de backtest](#table10)
 
 ## Sumário
 
@@ -255,8 +254,8 @@ Os bens e direitos devem estar ordenados no [BP](#bp) em ordem decrescente de se
 
 A [Tabela 1](#table1) exemplifica um modelo de Balanço Patrimonial e as contas que podem compor os ativos e passivos de uma empresa.
 
-<table id="table1" style="text-align:center">
-    <caption><strong>Tabela 1 – Modelo de Balanço Patrimonial</strong></caption>
+<table id="table1" style="text-align:center;">
+    <caption style="text-align:center;"><strong>Tabela 1 – Modelo de Balanço Patrimonial</strong></caption>
     <thead>
         <tr>
             <th style="text-align: center">ATIVO</th>
@@ -341,7 +340,7 @@ Segundo Ribeiro (2010), a <abbr title="Demonstração de Resultado de Exercício
 A [Tabela 2](#table2) exemplifica um modelo de DRE e as possíveis contas que a compõe.
 
 <table id="table2">
-    <caption>Tabela 2 – Modelo de DRE</caption>
+    <caption style="text-align:center;"><strong>Tabela 2 – Modelo de DRE</strong</caption>
     <thead>
         <tr>
             <th style="text-align:center">CONTA</th>
@@ -504,7 +503,7 @@ A DFC, por sua vez, visa evidenciar todas as transações realizadas nas disponi
 A [Tabela 3](#table3) exemplifica um modelo de DFC e suas possíveis transações.
 
 <table id="table3">
-    <caption>Tabela 3 – Modelo de DFC</caption>
+    <caption  style="text-align:center;"><strong>Tabela 3 – Modelo de DFC</strong></caption>
     <thead>
         <tr>
             <th style="text-align:center">DESCRIÇÃO</th>
@@ -812,7 +811,7 @@ Onde:
 Entretando, Damodaran (2012), Póvoa (2012) e Reis (2023), falam que os FCFEs históricos também podem ser calculados conforme o procedimento apresentado pela [Tabela 4](#table4).
 
 <table id="table4" style="text-align:center">
-    <caption>Tabela 4 – Cálculo do FCFE</caption>
+    <caption style="text-align:center;"><strong>Tabela 4 – Cálculo do FCFE</strong></caption>
     <thead>
         <tr>
             <th style="text-align:center">PARCELA</th>
@@ -1527,7 +1526,7 @@ Como objetivos para a escolha de uma ação, foi adotado uma postura conservador
 A partir desta premissa, foi elaborado a [Tabela 5](#table5), que reúne os valores e objetivos pretendidos pela avaliação das ações disponíveis no mercado.
 
 <table id="table5">
-    <caption>Tabela 5 – Objetivos e valores do investidor conservador</caption>
+    <caption style="text-align:center;"><strong>Tabela 5 – Objetivos e valores do investidor conservador</strong></caption>
     <thead>
         <tr>
             <th style="text-align:center">OBJETIVOS</th>
@@ -1596,7 +1595,7 @@ Após a análise do contexto de negócio, procura-se identificar os conjuntos de
 A [Tabela 6](#table6) resume as principais informações consideradas necessárias para o processo de _valuation_ proposto neste trabalho e as fontes das quais elas foram obtidas. Como optou-se por formular um modelo de FCD com fluxos de caixas reais, era necessário obter as taxas de inflação – tendo arbitrado o IPCA como o indicador dessa variável macroeconômica – para serem descontadas das taxas nominais. Por conta disso, não foram consideradas a aplicação das tributações na avaliação das rentabilidades das carteiras selecionadas ou sobre a Selic, uma vez que a base de cálculo do IR é a rentabilidade nominal, e não a real.
 
 <table id="table6">
-    <caption>Tabela 6 – Conjunto de dados utilizados</caption>
+    <caption style="text-align:center;"><strong>Tabela 6 – Conjunto de dados utilizados</strong></caption>
     <thead>
         <tr>
             <th style="text-align:center">Dado</th>
@@ -1727,7 +1726,7 @@ O processo ETL escolhido para esta fase se baseou nas seguintes regras de tratam
 - Para a realização do TOPSIS, alguns indicadores tiveram que ser modificados segundo a sua função de desejabilidade $U(C)$ para que fossem adequadamente aplicados ao método multicritério (por exemplo, multiplicar o critério por um fator de -1 caso o seu aumento representasse um valor indesejável ao tomador de decisão), como estão melhor explicados na [Tabela 7](#table7).
 
 <table id="table7">
-    <caption>Tabela 7 – Indicadores fundamentalistas utilizadas no TOPSIS</caption>
+    <caption style="text-align:center;"><strong>Tabela 7 – Indicadores fundamentalistas utilizadas no TOPSIS</strong></caption>
     <thead>
         <tr>
             <th style="text-align:center">Critério</th>
@@ -1834,7 +1833,7 @@ Neste trabalho, ainda tomando o caso do ROE como exemplo, arbitrou-se que, caso 
 A função utilidade dos indicadores P/L e P/VP não necessitaram ser definidas por partes, uma vez que o preço de uma ação (ou valor de mercado da empresa) nunca seria negativo, não havendo portanto preocupação sobre a ocorrência de valores espúrios para esses indicadores.
 
 <table id="table8">
-    <caption>Tabela 8 – Definição por parte da função</caption>
+    <caption style="text-align:center;"><strong>Tabela 8 – Definição por parte da função</strong></caption>
     <thead>
         <tr>
             <th style="text-align:center">Critério</th>
@@ -1985,7 +1984,7 @@ Ao final de cada ano do _backtest_, foram aplicadas as seguintes regras:
 Na [Tabela 9](#table9) constam os resultados das carteiras selecionadas dadas pelo modelo de _valuation_ proposto. O gráfico consta a comparação entre os retornos das carteiras selecionadas e o do Ibovespa.
 
 <table id="table9" style="text-align:center">
-    <caption>Tabela 9 – Carteiras Selecionadas (2016 – 2023)</caption>
+    <caption style="text-align:center;"><strong>Tabela 9 – Carteiras Selecionadas (2016 – 2023)</strong></caption>
     <thead>
         <tr>
             <th colspan="2" style="text-align:center">2016</th>
@@ -2292,7 +2291,7 @@ Onde:
 - $\sigma_i$ é o desvio-padrão dos retornos do ativo ao longo do período.
 
 <table id="table10" style="text-align:center">
-    <caption>Tabela 10 – Retornos das carteiras dos modelos de backtest</caption>
+    <caption style="text-align:center;"><strong>Tabela 10 – Retornos das carteiras dos modelos de backtest</strong></caption>
     <thead>
         <tr>
             <th style="text-align:center">Ano</th>
