@@ -650,7 +650,15 @@ Onde:
 
 Donde o investidor pode estimar a margem de segurança como sendo:
 
-<span id="eq2-2">$$ MS = \frac{VIA - P}{P} \times 100\% \tag{2.2} $$</span>
+<span id="eq2-2">
+
+$$
+\begin{array}{lr}
+    MS = \frac{VIA - P}{P} \times 100\% & \text{(2.2)}
+\end{array}
+$$
+
+</span>
 
 Onde $P$ é o preço da ação.
 
@@ -666,7 +674,15 @@ Por conta disso, conforme explicado por Damodaran (2012) e Filho _et al._ (2008)
 
 A equação a seguir apresenta a fórmula geral comumente empregada para a determinação do valor presente de um ativo.
 
-<span id="eq2-3">$$ VIA = \sum_{t=1}^{n}{\frac{FCL_{t}}{(1+r)^t}} \tag{2.3} $$</span>
+<span id="eq2-3">
+
+$$
+\begin{array}{lr}
+    VIA = \sum_{t=1}^{n}{\frac{FCL_{t}}{(1+r)^t}} & \text{(2.3)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -675,9 +691,17 @@ Onde:
 - $r$ é a taxa de desconto;
 - $n$ é o número de períodos esperados para a geração do fluxo de caixa.
 
-No entanto, para modelos em que se admite que o ativo gerará fluxo de caixa permanentemente, – como é o caso na avaliação de ações, já que não se espera que os sócios abram a empresa com expectativas que de seus negócios se findem – é comum incluir mais uma parcela à [equação (2.3)](#eq2-3).
+No entanto, para modelos em que se admite que o ativo gerará fluxo de caixa permanentemente, – como é o caso na avaliação de ações, já que não se espera que os sócios abram a empresa com expectativas que de seus negócios se findem – é comum incluir mais uma parcela à [Equação (2.3)](#eq2-3).
 
-<span id="eq2-4">$$ VIA = \underbrace{\sum_{t=1}^{n}{\frac{FCL_{t}}{(1+r)^t}}}_{V_{hp}} + \underbrace{\frac{VT}{(1+r)^n}}_{V_p} \tag{2.4} $$</span>
+<span id="eq2-4">
+
+$$
+\begin{array}{lr}
+    VIA = \underbrace{\sum_{t=1}^{n}{\frac{FCL_{t}}{(1+r)^t}}}_{V_{hp}} + \underbrace{\frac{VT}{(1+r)^n}}_{V_p} & \text{(2.4)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -715,7 +739,15 @@ $$ \sum_{t=1}^{\infty}{(\frac{1+g}{1+r})^t} = \frac{q}{1-q} = \frac{\frac{1+g}{1
 
 Portanto, o valor presente de uma ação pelo modelo de Gordon será de:
 
-<span id="eq2-5"> $$ VIA = \frac{D_{0}(1+g)}{r-g} \tag{2.5} $$ </span>
+<span id="eq2-5">
+
+$$
+\begin{array}{lr}
+    VIA = \frac{D_{0}(1+g)}{r-g} & \text{(2.5)}
+\end{array}
+$$
+
+</span>
 
 Apesar de ser um modelo bem criticado por assumir uma premissa considerada bastante irrealista para muitas empresas, tendo a sua aplicação limitada para empresas com crescimento estável, ele é um bom exemplo intuitivo sobre como as principais variáveis afetam o preço de uma ação.
 
@@ -727,7 +759,15 @@ No entanto, como ressaltado também por Filho et al. (2008), embora o aumento de
 
 O modelo de Fluxo de Caixa Livre para os Acionistas busca, primeiramente, estimar qual o valor intrínseco de mercado $VIM$ da empresa a partir do desconto dos fluxos de caixa pertencentes exclusivamente aos acionistas após o pagamento das despesas, impostos e amortização de dívidas.
 
-<span id="eq2-6">$$ VIM = \sum_{t=1}^{n}{\frac{FCFE_t}{(1+r)^t}} + \frac{VT}{(1+r)^n} \tag{2.6} $$</span>
+<span id="eq2-6">
+
+$$
+\begin{array}{lr}
+    VIM = \sum_{t=1}^{n}{\frac{FCFE_t}{(1+r)^t}} + \frac{VT}{(1+r)^n} & \text{(2.6)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -739,13 +779,29 @@ Onde:
 
 Com o valor de mercado estimado, divide-se pelo número de ações emitidos no mercado para obter o valor intrínseco da ação.
 
-<span id="eq2-7">$$ VIA = \frac{VIM}{N} \tag{2.7} $$</span>
+<span id="eq2-7">
+
+$$
+\begin{array}{lr}
+    VIA = \frac{VIM}{N} & \text{(2.7)}
+\end{array}
+$$
+
+</span>
 
 Onde $N$ é o número de ações emitidas da empresa.
 
 A projeção dos $FCFE_t$, para $1 \le t \le n$, deve ser realizado com base nos FCFEs históricos, cujo cálculo pode ser feita pela fórmula geral apresentada por Kobori (2018), dada por:
 
-<span id="eq2-8">$$ FCFE = FCO + FCI + FCF \tag{2.8} $$</span>
+<span id="eq2-8">
+
+$$
+\begin{array}{lr}
+    FCFE = FCO + FCI + FCF & \text{(2.8)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -807,7 +863,15 @@ Além das projeções dos $FCFE_t$, um outro desafio para o cálculo do $VIM$ é
 
 Segundo Damodaran (2012), um dos modelos mais empregados para a determinação do custo do capital próprio é o CAPM, desenvolvido no início da década de 1960. Partindo da hipótese de que a diversificação de ativos não traz custos adicionais nem aumento de ganhos, então a melhor carteira de ações seria aquela que compõe todas as ações negociadas na bolsa, isto é, a _carteira de mercado_. Nesse cenário, o risco de um ativo seria equivalente ao seu risco adicional à carteira de mercado, representado pelo indicador $\beta$, calculado por:
 
-<span id="eq2-9">$$ \beta_i = \frac{\text{Cov}(R_i, R_m)}{\sigma^2(R_m)} \tag{2.9}$$</span>
+<span id="eq2-9">
+
+$$
+\begin{array}{lr}
+    \beta_i = \frac{\text{Cov}(R_i, R_m)}{\sigma^2(R_m)} & \text{(2.9)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -823,7 +887,15 @@ Ainda segundo Póvoa (2012), uma outra forma de calcular o $\beta_i$ de uma aç�
 
 Partindo das hipóteses anteriormente mencionadas, o CAPM diz que o retorno esperado de uma ação será dado por:
 
-<span id="eq2-10">$$ r = R_f + \beta_i (E[R_m]-R_f) \tag{2.10}$$</span>
+<span id="eq2-10">
+
+$$
+\begin{array}{lr}
+    r = R_f + \beta_i (E[R_m]-R_f) & \text{(2.10)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -835,7 +907,15 @@ A lógica por trás da fórmula é a de que, ao investir em um ativo com risco, 
 
 No entanto, no método de estimação dos FCFEs não se leva em consideração a estrutura de capital da empresa, pois não é considerado nenhum outro capital além do seu capital próprio. Portanto, deve-se desconsiderar a sua alavancagem financeira, uma vez que boa parte da volatilidade de suas ações se deve pela proporção das dívidas assumidas (PÓVOA, 2012). Além disso, uma vez que diferentes empresas apresentam diferentes estruturas de capital, o beta a ser utilizado no modelo CAPM deve ser o desalavancado ($\beta_d$), calculado como:
 
-<span id="eq2-11">$$\beta_d = \frac{\beta}{1+(1-T)\frac{D}{E}} \tag{2.11}$$</span>
+<span id="eq2-11">
+
+$$
+\begin{array}{lr}
+    \beta_d = \frac{\beta}{1+(1-T)\frac{D}{E}} & \text{(2.11)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -846,19 +926,43 @@ Segundo Damodaran (2012), apesar do CAPM ser intuitivo e simples, ele parte de p
 
 Por conta disso, Damodaran (2012) sugere como solução substituir o $\beta_i$ pelo beta médio do setor ($\beta_{\text{setor}}$) em que a empresa se encontra, uma vez que a média de muitos $\beta_i$ atenua o efeito dos erros e das distorções. Póvoa (2012) sugere como cálculo para o $\beta_{\text{setor}}$ a média ponderada pelos valores de mercado $VM_i$ das empresas.
 
-<span id="eq2-12">$$\beta_{\text{setor}} = \frac{\sum_{i=1}^{m}{\beta_i VM_i}}{\sum_{i=1}^{m}{VM_i}} \tag{2.12}$$</span>
+<span id="eq2-12">
+
+$$
+\begin{array}{lr}
+    \beta_{\text{setor}} = \frac{\sum_{i=1}^{m}{\beta_i VM_i}}{\sum_{i=1}^{m}{VM_i}} & \text{(2.12)}
+\end{array}
+$$
+
+</span>
 
 Onde $m$ é o total de empresas presentes no setor.
 
 Portanto, a equação recomendada para o cálculo do custo do capital próprio no método de FCFE seria:
 
-<span id="eq2-13">$$r = R_f + \beta_{\text{setor}}(E[R_m]-R_f) \tag{2.13}$$</span>
+<span id="eq2-13">
+
+$$
+\begin{array}{lr}
+    r = R_f + \beta_{\text{setor}}(E[R_m]-R_f) & \text{(2.13)}
+\end{array}
+$$
+
+</span>
 
 #### **FCFF**
 
 O modelo de Fluxo de Caixa Livre para a Empresa, diferentemente do FCFE, busca estimar o valor intrínseco da empresa ou da firma ($VIF$), isto é, o valor considerando o capital total alocado na empresa, financiado pelo capital dos sócios e acionistas (capital próprio) e as dívidas e empréstimos dos credores (capital de terceiros). A fórmula do $VIF$ é análoga à do $VIM$.
 
-<span id="eq2-14">$$ VIF = \sum_{t=1}^{n}{\frac{FCFF_{t}}{(1+r)^t}} + \frac{VT}{(1+r)^n} \tag{2.14} $$</span>
+<span id="eq2-14">
+
+$$
+\begin{array}{lr}
+    VIF = \sum_{t=1}^{n}{\frac{FCFF_{t}}{(1+r)^t}} + \frac{VT}{(1+r)^n} & \text{(2.14)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -867,15 +971,39 @@ Onde:
 
 Por fim, para a obtenção do valor intrínseco da ação, é necessário retirar a dívida total da empresa do valor da firma e dividir a diferença pelo número total de ações.
 
-<span id="eq2-15">$$ VIA = \frac{VIF-D}{N} \tag{2.15} $$</span>
+<span id="eq2-15">
+
+$$
+\begin{array}{lr}
+    VIA = \frac{VIF-D}{N} & \text{(2.15)}
+\end{array}
+$$
+
+</span>
 
 Para o cálculo dos FCFF históricos, é necessário considerar a dívida, já que estamos considerando tanto o capital próprio como de terceiros. Assim, na avaliação dos demonstrativos contábeis, ao invés de se partir do lucro líquido do exercício social, parte-se do EBITDA, por não considerar as deduções dos juros e das amortizações.
 
-<span id="eq2-16">$$ FCFF = EBITDA(1-T) + DP \dot T - CAPEX - \Delta NCG \tag{2.16} $$</span>
+<span id="eq2-16">
+
+$$
+\begin{array}{lr}
+    FCFF = EBITDA(1-T) + DP \dot T - CAPEX - \Delta NCG & \text{(2.16)}
+\end{array}
+$$
+
+</span>
 
 Em relação à formula geral (2.8), bastaria retirar a parcela FCF para obter o FCFF, ficando portanto:
 
-<span id="eq2-17">$$ FCFF = FCO + FCI \tag{2.17} $$</span>
+<span id="eq2-17">
+
+$$
+\begin{array}{lr}
+    FCFF = FCO + FCI & \text{(2.17)}
+\end{array}
+$$
+
+</span>
 
 Além dessas adaptações em relação ao FCFE, é necessário salientar que a taxa a ser considerada deve levar em conta não só o custo do capital próprio, como também o de terceiros. Para isso, foi empregado o cálculo do WACC da empresa.
 
@@ -885,19 +1013,43 @@ O CMPC, como também é conhecido o WACC, estima o custo de capital da empresa c
 
 Segundo Filho et al. (2008), considerando que uma empresa possua fontes de financiamento, com cada uma possuindo uma taxa de custo $r_i$, a fórmula geral para o custo médio ponderado de capital da empresa deverá ser dada por:
 
-<span id="eq2-18">$$ WACC = \frac{\sum_{i=1}^{n}{C_ir_i}}{\sum_{i=1}^{n}{C_i}} \tag{2.18} $$</span>
+<span id="eq2-18">
+
+$$
+\begin{array}{lr}
+    WACC = \frac{\sum_{i=1}^{n}{C_ir_i}}{\sum_{i=1}^{n}{C_i}} & \text{(2.18)}
+\end{array}
+$$
+
+</span>
 
 Onde $C_i$ é o total financiado à empresa pela fonte $i$.
 
 Portanto, considerando que as fontes de financiamento possam ser resumidas em capital próprio ($E$) e de terceiros ($D$), com suas respectivas taxas de custo $r_E$ e $r_D$, então a taxa mínima aceitável pelos acionistas deverá ser dada por:
 
-<span id="eq2-19">$$ WACC = \frac{E}{E+D}r_E + \frac{D}{E+D}r_D(1-T) \tag{2.19} $$</span>
+<span id="eq2-19">
+
+$$
+\begin{array}{lr}
+    WACC = \frac{E}{E+D}r_E + \frac{D}{E+D}r_D(1-T) & \text{(2.19)}
+\end{array}    
+$$
+
+</span>
 
 O $r_E$ é calculado pelo modelo CAPM, como explicado em um tópico anterior. Neste caso, é necessário fazer uso do beta alavancado ao invés do desalavancado, uma vez que o risco da dívida deverá ser avaliado junto com o risco do próprio negócio. Vale comentar também que o termo representa a alíquota do imposto de renda pago pela empresa e, portanto, o fator $(1-T)$ representa o benefício fiscal que a empresa ganha sobre o cutos do capital de terceiros.
 
 Devido às desvantagens do uso do beta individual $\beta_i$, apresentadas no tópico sobre CAPM, Póvoa (2012) propõe o uso de um _bottom-up_ beta ($\hat{\beta}$) em seu lugar. Esse coeficiente se baseia na regra estatística de que o desvio padrão da média de betas individuais é sempre menor que o desvio-padrão médio dos betas individuais, uma vez que:
 
-<span id="eq2-20">$$ \sigma(\overline{\beta_i}) = \frac{\overline{\sigma}(\beta_i)}{\sqrt{n}} \tag{2.20} $$</span>
+<span id="eq2-20">
+
+$$
+\begin{array}{lr}
+    \sigma(\overline{\beta_i}) = \frac{\overline{\sigma}(\beta_i)}{\sqrt{n}} & \text{(2.20)}
+\end{array}  
+$$
+
+</span>
 
 Onde:
 
@@ -912,23 +1064,63 @@ Para o cálculo do $\hat{\beta_i}$ de uma ação, será necessário realizar a s
 2. Calcular o beta do setor a partir de uma soma ponderada dos $\beta_i$ de cada empresa, tendo como pesos os valores $VM_i$ negociados no mercado de cada empresa $i$.
 3. Calcular a proporção entre capital de terceiros e capital próprio médio do setor a partir da média ponderada, tendo como pesos o valor de mercado das empresas no setor.
 
-<span id="eq2-21">$$ \overline{\frac{D}{E}} = \frac{\sum_{i=1}^{m}{VM_i}\frac{D_i}{E_i}}{\sum_{i=1}^{m}{VM_i}} \tag{2.21} $$</span>
+<span id="eq2-21">
+
+$$
+\begin{array}{lr}
+    \overline{\frac{D}{E}} = \frac{\sum_{i=1}^{m}{VM_i}\frac{D_i}{E_i}}{\sum_{i=1}^{m}{VM_i}} & \text{(2.21)}
+\end{array}
+$$
+
+</span>
 
 4. Uma vez que empresas com maior alavancagem financeiras apresentam maior volatilidade, é necessário calcular o beta desalavancado do setor ($\beta_{d^{\text{setor}}}$) por:
 
-<span id="eq2-22">$$ \beta_{d^{\text{setor}}} = \frac{\beta_{\text{setor}}}{1+(1-T) \overline{(\frac{D}{E}})}  \tag{2.22} $$</span>
+<span id="eq2-22">
+
+$$
+\begin{array}{lr}
+    \beta_{d^{\text{setor}}} = \frac{\beta_{\text{setor}}}{1+(1-T) \overline{(\frac{D}{E})}} & \text{(2.22)}
+\end{array}
+$$
+
+</span>
 
 5. Realavancar o $\beta_{d^{\text{setor}}}$ pela alavancagem financeira da empresa $i$ para finalmente obter o seu $\hat{\beta_i}$.
 
-<span id="eq2-23">$$ \hat{\beta_i} =  \beta_{d^{\text{setor}}}[1 + (1-T)\frac{D_i}{E_i}] \tag{2.23} $$</span>
+<span id="eq2-23">
+
+$$
+\begin{array}{lr}
+    \hat{\beta_i} =  \beta_{d^{\text{setor}}}[1 + (1-T)\frac{D_i}{E_i}] & \text{(2.23)}
+\end{array}
+$$
+
+</span>
 
 Portanto, o custo de capital próprio $r_E$ recomendado por Póvoa (2012) passaria a ser dado por:
 
-<span id="eq2-24">$$ r_E = R_f + \hat{\beta_i}(E[R_m] - R_f) \tag{2.24} $$</span>
+<span id="eq2-24">
+
+$$
+\begin{array}{lr}
+    r_E = R_f + \hat{\beta_i}(E[R_m] - R_f) & \text{(2.24)}
+\end{array}
+$$
+
+</span>
 
 Por fim, o último _input_ necessário para calcular o WACC é a taxa de custo de capital de terceiros $r_D$, que pode ser facilmente calculada pela razão:
 
-<span id="eq2-25">$$ r_D = \frac{J}{D} \tag{2.25} $$</span>
+<span id="eq2-25">
+
+$$
+\begin{array}{lr}
+    r_D = \frac{J}{D} & \text{(2.25)}
+\end{array}
+$$
+
+</span>
 
 Onde $J$ é o total das despesas financeiras.
 
@@ -990,7 +1182,15 @@ Este indicador foi adotado como sendo a métrica de crescimento da empresa, uma 
 
 Neste trabalho, arbitrou-se por calcular a média aritmética das variações dos lucros das empresas nos últimos 5 anos, conforme a seguinte fórmula:
 
-<span id="eq2-26">$$ \overline{\Delta LL} = \frac{\sum_{t=1}^{5}{{\Delta LL}_{t}}}{5} = \frac{\sum_{t=1}^{5}{\frac{LL_t}{LL_{t-1}}-1}}{5} \tag{2.26}$$</span>
+<span id="eq2-26">
+
+$$
+\begin{array}{lr}
+    \overline{\Delta LL} = \frac{\sum_{t=1}^{5}{{\Delta LL}_{t}}}{5} = \frac{\sum_{t=1}^{5}{\frac{LL_t}{LL_{t-1}}-1}}{5} & \text{(2.26)}
+\end{array}
+$$
+
+</span>
 
 #### Dívida Líquida / Patrimônio Líquido (DL/PL)
 
@@ -1043,18 +1243,19 @@ Para a execução do algoritmo do TOPSIS, é necessário que o tomador de decis�
 <span id="eq2-26">
 
 $$
-D_{n \times m} =
-\begin{matrix}
-    \ & \begin{matrix} C_1 & C_2 & \dots & C_m\end{matrix} \\
-    \begin{matrix}A_1 \\ A_2 \\ \vdots \\ A_n\end{matrix} &
-    \begin{bmatrix}
-        v_{11} & v_{12} & \dots  & v_{1m} \\
-        v_{21} & v_{22} & \dots  & v_{2m} \\
-        \vdots & \vdots & \ddots & \vdots \\
-        v_{n1} & v_{n2} & \dots  & v_{nm}
-    \end{bmatrix}
-\end{matrix}
-\tag{2.27}
+\begin{array}{lr}
+    D_{n \times m} =
+    \begin{matrix}
+        \ & \begin{matrix} C_1 & C_2 & \dots & C_m\end{matrix} \\
+        \begin{matrix}A_1 \\ A_2 \\ \vdots \\ A_n\end{matrix} &
+        \begin{bmatrix}
+            v_{11} & v_{12} & \dots  & v_{1m} \\
+            v_{21} & v_{22} & \dots  & v_{2m} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            v_{n1} & v_{n2} & \dots  & v_{nm}
+        \end{bmatrix}
+    \end{matrix} & \text{(2.27)}
+\end{array}
 $$
 
 </span>
@@ -1069,47 +1270,106 @@ Uma maneira de contornar essa situação é limitar o domínio da função utili
 
 Após a definição da matriz $D_{n \times m}$, os pesos são normalizados conforme a equação a seguir:
 
-<span id="eq2-28">$$ \overline{w}_j = \frac{w_j}{\sum_{j=1}^{m}{w_j}} \tag{2.28}$$</span>
+<span id="eq2-28">
 
-Com o vetor de pesos normalizados $ \overline{w}_j = [ \overline{w}_1,  \overline{w}_2, \dots,  \overline{w}_m]$ calculados, os valores da matriz $D_{n \times m}$ serão normalizados pela fórmula:
+$$
+\begin{array}{lr}
+    \overline{w}_j = \frac{w_j}{\sum_{j=1}^{m}{w_j}} & \text{(2.28)}
+\end{array}
+$$
 
-<span id="eq2-29">$$ \overline{v}_{ij} = \frac{I_jv_{ij}}{\sqrt{\sum_{i=1}^{n}{v^{2}_{ij}}}} \tag{2.29}$$</span>
+</span>
+
+Com o vetor de pesos normalizados $ \overline{w}_j = [ \overline{w}_1,  \overline{w}_2, \dots, \overline{w}_m]$ calculados, os valores da matriz $D_{n \times m}$ serão normalizados pela fórmula:
+
+<span id="eq2-29">
+
+$$
+\begin{array}{lr}
+    \overline{v}_{ij} = \frac{I_jv_{ij}}{\sqrt{\sum_{i=1}^{n}{v^{2}_{ij}}}} & \text{(2.29)}
+\end{array}
+$$
+
+</span>
 
 Obtendo, assim, a matriz de decisão normalizada .
 
 <span id="eq2-30">
 
 $$
-\overline{D}_{n \times m} =
-\begin{matrix}
-    \ & \begin{matrix} C_1 & \dots & C_j & \dots & C_m\end{matrix} \\
-    \begin{matrix}A_1 \\ \vdots \\ A_i \\ \vdots \\ A_n\end{matrix} &
-    \begin{bmatrix}
-        \overline{v}_{11} & \dots & \overline{v}_{1j} & \dots  & \overline{v}_{1m} \\
-        \vdots & \ddots & \vdots & \ddots & \vdots \\
-        \overline{v}_{i1} & \dots & \overline{v}_{ij} & \dots  & \overline{v}_{im} \\
-        \vdots & \ddots & \vdots & \ddots & \vdots \\
-        \overline{v}_{n1} & \dots & \overline{v}_{nj} & \dots  & \overline{v}_{nm}
-    \end{bmatrix}
-\end{matrix}
-\tag{2.30}
+\begin{array}{lr}
+    \overline{D}_{n \times m} =
+    \begin{matrix}
+        \ & \begin{matrix} C_1 & \dots & C_j & \dots & C_m\end{matrix} \\
+        \begin{matrix}A_1 \\ \vdots \\ A_i \\ \vdots \\ A_n\end{matrix} &
+        \begin{bmatrix}
+            \overline{v}_{11} & \dots & \overline{v}_{1j} & \dots  & \overline{v}_{1m} \\
+            \vdots & \ddots & \vdots & \ddots & \vdots \\
+            \overline{v}_{i1} & \dots & \overline{v}_{ij} & \dots  & \overline{v}_{im} \\
+            \vdots & \ddots & \vdots & \ddots & \vdots \\
+            \overline{v}_{n1} & \dots & \overline{v}_{nj} & \dots  & \overline{v}_{nm}
+        \end{bmatrix}
+    \end{matrix} & \text{(2.30)}
+\end{array}
 $$
 
 </span>
 
 A partir de $\overline{D}_{n \times m}$, serão obtidos os vetores das soluções ideal (PIS) e anti-ideal (NIS) a partir dos valores máximos e mínimos presentes em cada um dos critérios $C_j$.
 
-<span id="eq2-31">$$PIS = [\text{Max}_j\{\overline{v}_{ij}\}| \forall j \in \{1, \dots, m\}] = [\overline{v}_{1}^{+}, \dots, \overline{v}_{j}^{+}, \dots, \overline{v}_{m}^{+}] \tag{2.31}$$</span>
-<span id="eq2-32">$$NIS = [\text{Min}_j\{\overline{v}_{ij}\}| \forall j \in \{1, \dots, m\}] = [\overline{v}_{1}^{-}, \dots, \overline{v}_{j}^{-}, \dots, \overline{v}_{m}^{-}] \tag{2.32}$$</span>
+<span id="eq2-31">
+
+$$
+\begin{array}{lr}
+    PIS = [\text{Max}_j\{\overline{v}_{ij}\}| \forall j \in \{1, \dots, m\}] = [\overline{v}_{1}^{+}, \dots, \overline{v}_{j}^{+}, \dots, \overline{v}_{m}^{+}] & \text{(2.31)}
+\end{array}
+$$
+
+</span>
+
+<span id="eq2-32">
+
+$$
+\begin{array}{lr}
+    NIS = [\text{Min}_j\{\overline{v}_{ij}\}| \forall j \in \{1, \dots, m\}] = [\overline{v}_{1}^{-}, \dots, \overline{v}_{j}^{-}, \dots, \overline{v}_{m}^{-}] & \text{(2.32)}
+\end{array}
+$$
+
+</span>
 
 Usando PIS e NIS como referências, calcula-se as distâncias euclidianas até a solução ideal ($d_{i}^{+}$) e a anti-ideal ($d_{i}^{-}$) para cada uma das alternativas $A_i$.
 
-<span id="eq2-33">$$ d_{i}^{+} = \sqrt{\sum_{j=1}^{m}{(\overline{v}_{ij} - \overline{v}_{j}^{+})^2}} \tag{2.33}$$</span>
-<span id="eq2-34">$$ d_{i}^{-} = \sqrt{\sum_{j=1}^{m}{(\overline{v}_{ij} - \overline{v}_{j}^{-})^2}} \tag{2.34}$$</span>
+<span id="eq2-33">
+
+$$
+\begin{array}{lr}
+    d_{i}^{+} = \sqrt{\sum_{j=1}^{m}{(\overline{v}_{ij} - \overline{v}_{j}^{+})^2}} & \text{(2.33)}
+\end{array}
+$$
+
+</span>
+
+<span id="eq2-34">
+
+$$
+\begin{array}{lr}
+    d_{i}^{-} = \sqrt{\sum_{j=1}^{m}{(\overline{v}_{ij} - \overline{v}_{j}^{-})^2}} & \text{(2.34)}
+\end{array}
+$$
+
+</span>
 
 Finalmente, calcula-se o coeficiente de similaridade ${CC}_{i}$ para cada uma das alternativas $A_i$, a fim de que elas sejam ordenadas em ordem decrescente de ${CC}_{i}$.
 
-<span id="eq2-35">$$ {CC}_{i} = \frac{d_{i}^{-}}{d_{i}^{-}+d_{i}^{+}} \tag{2.35}$$</span>
+<span id="eq2-35">
+
+$$
+\begin{array}{lr}
+    {CC}_{i} = \frac{d_{i}^{-}}{d_{i}^{-}+d_{i}^{+}} \text{(2.35)}
+\end{array}
+$$
+
+</span>
 
 #### Método da Entropia
 
@@ -1119,7 +1379,15 @@ Como alternativa para a definição dos pesos sem a necessidade da intervenção
 
 Conforme explicado no trabalho de Hein _et al_. (2013), o conceito de entropia foi definido pelo físico Rudolf Clausius em 1865 como medida do grau de irreversibilidade de um sistema termodinâmico fechado. Em 1948, esse conceito foi ampliado para a área da Teoria da Informação, fundada por Claude Shannon, quem redefiniu a entropia para uma variável aleatória discreta como sendo:
 
-<span id="eq2-36">$$ S[X] = -\sum_{i=1}^{n}{p_i(x)\ln (p_i(x))} \tag{2.36}$$</span>
+<span id="eq2-36">
+
+$$
+\begin{array}{lr}
+    S[X] = -\sum_{i=1}^{n}{p_i(x)\ln (p_i(x))} & \text{(2.36)}
+\end{array}
+$$
+
+</span>
 
 Onde $0 \le p_i(x) \le 1$ é a probabilidade de $X=i$.
 
@@ -1129,21 +1397,53 @@ $$ \lim_{p \to 0^{+}}{p \ln p} = \lim_{p \to 0^{+}}{\frac{\ln p}{1/p}} = -\frac{
 
 Já no caso de uma variável aleatória contínua, com função de distribuição de probabilidade $p(x)$, a sua entropia é definida por:
 
-<span id="eq2-37">$$ S[X] = -\int_{0}^{\infty}{p_i(x) \ln (p_i(x))} \tag{2.37}$$</span>
+<span id="eq2-37">
+
+$$
+\begin{array}{lr}
+    S[X] = -\int_{0}^{\infty}{p_i(x) \ln (p_i(x))} & \text{(2.37)}
+\end{array}
+$$
+
+</span>
 
 Conforme explicado por Hein _et al_. (2013), quanto maior for a diferenciação dos valores de um dado atributo (isto é, quanto menor for a sua entropia), maior é o seu poder informacional para a determinação de uma decisão. Para ser mais ilustrativo, em um exemplo de tomada de decisão da compra de uma casa, em que o preço de todas as casas é o mesmo, tratar-se-ia de um critério com o mais alto grau de entropia, pois o preço da moradia não informa nenhuma discriminação entre as alternativas que possibilite ao tomador de decisão escolher a melhor casa. Nesses casos, o critério “preço” teria a máxima entropia e seria descartada da matriz de decisão.
 
 O processo para a determinação dos pesos $w_j$ pelo método da entropia, conforme apresentado por Hein _et al_. (2013), se inicia com a normalização dos valores da matriz de decisão $D_{n \times m}$ em relação a cada um dos critérios $C_j$ por:
 
-<span id="eq2-38">$$ \overline{v}_{ij} = \frac{v_{ij}}{\text{Max}_j\{v_{ij}\}} \tag{2.38}$$</span>
+<span id="eq2-38">
+
+$$
+\begin{array}{lr}
+    \overline{v}_{ij} = \frac{v_{ij}}{\text{Max}_j\{v_{ij}\}} & \text{(2.38)}
+\end{array}
+$$
+
+</span>
 
 No entanto, vale salientar que a fórmula 2.38 só é aplicável quando todos os respectivos $v_{ij}$ a um critério $C_j$ são positivos. No caso de haver alguns $v_{ij} \le 0$, a normalização de $D_{n \times m}$ deve ser feita de forma a torna todos os valores $v_{ij}$ em números positivos, uma vez que o cálculo da entropia de um critério envolve o uso da função logarítmica, cujo domínio corresponde ao conjunto dos números reais positivos. Portanto, nesta etapa, adotou-se a seguinte Normalização Min-Máx para que os valores $v_{ij}$ fossem reescalados para o intervalo $(0, 1]$.
 
-<span id="eq2-39">$$ \overline{v}_{ij} = \frac{v_{ij} - \text{Min}_j\{v_{ij}\}}{\text{Max}_j\{v_{ij}\} - \text{Min}_j\{v_{ij}\}} \tag{2.39}$$</span>
+<span id="eq2-39">
+
+$$
+\begin{array}{lr}
+    \overline{v}_{ij} = \frac{v_{ij} - \text{Min}_j\{v_{ij}\}}{\text{Max}_j\{v_{ij}\} - \text{Min}_j\{v_{ij}\}} & \text{(2.39)}
+\end{array}
+$$
+
+</span>
 
 Com os dados normalizados, calcula-se a entropia $s_j$ do critério $j$ como sendo:
 
-<span id="eq2-40">$$ s_j = -\frac{1}{s_{\text{Max}}} \sum_{i=1}^{n}{\frac{\overline{v}_{ij}}{V_j} \ln (\frac{\overline{v}_{ij}}{V_j})} \tag{2.40}$$</span>
+<span id="eq2-40">
+
+$$
+\begin{array}{lr}
+    s_j = -\frac{1}{s_{\text{Max}}} \sum_{i=1}^{n}{\frac{\overline{v}_{ij}}{V_j} \ln (\frac{\overline{v}_{ij}}{V_j})} & \text{(2.40)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -1152,7 +1452,15 @@ Onde:
 
 Como explicado anteriormente, quanto maior a entropia $s_j$ menor será o poder informacional do critério $j$. Assim, o seu peso final $\lambda_j$ deverá ser proporcional a $1-s_j$, e não a $s_j$, e normalizado para assegurar que $0 \le \lambda_j \le 1$ e que $\sum_{j=1}^{m}{\lambda_j} = 1$ (HEIN _et al_., 2013). Portanto, o seu cálculo deverá ser dado por:
 
-<span id="eq2-41">$$ \lambda_j = \frac{1-s_j}{m-S} \tag{2.41}$$</span>
+<span id="eq2-41">
+
+$$
+\begin{array}{lr}
+    \lambda_j = \frac{1-s_j}{m-S} & \text{(2.41)}
+\end{array}
+$$
+
+</span>
 
 Onde $S=\sum_{j=1}^{m}{s_j}$ é o somatório das entropias de todos os critérios.
 
@@ -1164,7 +1472,15 @@ Isto é, o critério alcançará a entropia máxima e, portanto, deverá ser ret
 
 Dessa forma, os pesos finais dos critérios no método TOPSIS serão dados por $\overline{w}_{j} = \lambda_j$, como foi o caso deste trabalho. Não obstante, no caso de o tomador de decisão ainda quiser desempenhar o papel de atribuir os pesos subjetivos $w_{j}$, Hein _et al_. (2013) sugerem combiná-los e normalizá-los com os $\lambda_j$ obtidos do método da entropia pela seguinte normalização:
 
-<span id="eq2-42">$$ \overline{w}_{j} = \frac{w_j\lambda_j}{\sum_{j=1}^{m}{w_j\lambda_j}} \tag{2.42}$$</span>
+<span id="eq2-42">
+
+$$
+\begin{array}{lr}
+    \overline{w}_{j} = \frac{w_j\lambda_j}{\sum_{j=1}^{m}{w_j\lambda_j}} & \text{(2.42)}
+\end{array}
+$$
+
+</span>
 
 ### **Power Query**
 
@@ -1585,11 +1901,27 @@ Por fim, para calcular o valor terminal do fluxo de caixa na perpetuidade, consi
 
 Dada às algumas inconsistências encontradas nas quantidades de ações de cada uma das empresas nos registros de capital social da CVM, não havia garantia de que o cálculo do $VIA$ pela [equação 2.7](#eq2-7) fosse adequada para todas as empresas. Por conta disso, a margem de segurança $MS$ foi calculada diretamente da comparação entre o $VIM$ e o valor atual de mercado $VM$ da empresa por meio da seguinte modificação feita da [equação 2.2](#eq2-2).
 
-<span id="eq3-1">$$ MS = \frac{VIM-VM}{VM} 100\% \tag{3.1}$$</span>
+<span id="eq3-1">
+
+$$
+\begin{array}{lr}
+    MS = \frac{VIM-VM}{VM} 100\% & \text{(3.1)}
+\end{array}
+$$
+
+</span>
 
 Dado o que foi explicado, o cálculo do valor intrínseco de mercado inicial $VIM_0$ das empresas foi feita pela seguinte equação:
 
-<span id="eq3-2">$$ VIM_0 = \sum_{t=1}^{3}{\frac{FCFE_t}{(1+r_E)^t}} + \frac{FCFE_3(1+g)}{(1+r_E)^3(r_E-g)} \tag{3.2}$$</span>
+<span id="eq3-2">
+
+$$
+\begin{array}{lr}
+    VIM_0 = \sum_{t=1}^{3}{\frac{FCFE_t}{(1+r_E)^t}} + \frac{FCFE_3(1+g)}{(1+r_E)^3(r_E-g)} & \text{(3.2)}
+\end{array}
+$$
+
+</span>
 
 Após a obtenção do $VIM_0$, os indicadores fundamentalistas constados na [Tabela 7](#table7) foram calculados a partir das demonstrações contábeis das empresas obtidas na CVM. Devido à grande diferença de volume do capital de terceiros entre as empresas bancárias e as demais empresas, utilizou-se os Índice de Basileia e de Imobilização como medidas de endividamento dos bancos no lugar do DL/PL e DL/EBIT. Além disso, como comentado anteriormente, uma vez que os balanços patrimoniais da CVM não separam os ativos e os passivos dos bancos em circulante e não circulante, não foi possível calcular os seus ILCs, sendo necessário substituí-lo pelo indicador ILG como indicador de liquidez das financeiras.
 
@@ -1597,11 +1929,27 @@ Para a aplicação do modelo TOPSIS, é ideal que fique a cargo do tomador de de
 
 Após o cálculo dos indicadores e de seus pesos, o TOPSIS se encarrega de calcular o coeficiente de similaridade $CC$ para cada uma das ações a fim de obter um fator de ágio $f_A$ – que se trata simplesmente de uma normalização Min-Máx do $CC$–, cujo propósito é reescalar o intervalo da sua imagem de \[0,1\] para \[-1,1\].
 
-<span id="eq3-3">$$ f_A = (2 \cdot CC - 1) \cdot 100\% \tag{3.3}$$</span>
+<span id="eq3-3">
+
+$$
+\begin{array}{lr}
+    f_A = (2 \cdot CC - 1) \cdot 100\% & \text{(3.3)}
+\end{array}
+$$
+
+</span>
 
 Dessa forma, o $VIM_0$ foi ajustado por meio de um ágio (ou deságio) da avaliação comparativa conduzida pelo TOPSIS, obtendo o valor intrínseco final da ação como sendo:
 
-<span id="eq3-4">$$ VIM = VIM_0 (1+f_A) = 2 \cdot VIM_0 \cdot CC \tag{3.4}$$</span>
+<span id="eq3-4">
+
+$$
+\begin{array}{lr}
+    VIM = VIM_0 (1+f_A) = 2 \cdot VIM_0 \cdot CC & \text{(3.4)}
+\end{array}
+$$
+
+</span>
 
 Com os $VIM$s obtidos, uma margem de segurança $MS$ é calculada e as ações são ordenadas em ordem decrescente de $MS$. A [Figura 3](#figure3) apresenta resumidamente o fluxograma do processo ETL aplicado.
 
@@ -1888,9 +2236,25 @@ Ao final da realização do _backtest_, comparou-se os retornos das carteiras se
 
 Pelos resultados do [Gráfico 4](#graphic4), viu-se que as carteiras selecionadas superam o Ibovespa em metade dos anos do período analisado, não sendo portanto possível chegar a uma conclusão sobre a contribuição do método TOPSIS quanto à consistência em superar o principal índice de mercado brasileiro no longo prazo. Contudo, ao se comparar os retornos total e médio ao longo dos anos entre as carteiras selecionadas (345,70% e 20,54% a.a., respectivamente) e o Ibovespa (209,43% e 15,17% a.a., respectivamente), é possível verificar que as rentabilidades da primeira superam as da última. Tais retornos foram calculados segundo as [Equações 3.5](#eq3-5) e [3.6](#eq3-6), respectivamente. Como as rentabilidades totais + 1 foram positivas para ambas as carteiras, foi possível comparar os seus retornos médios pela média geométrica no lugar da aritmética.
 
-<span id="eq3-5">$$ \text{Retorno Total} = R = \prod_{i=1}^{8}{(1+R_i)} - 1  \tag{3.5}$$</span>
+<span id="eq3-5">
 
-<span id="eq3-6">$$ \overline{R} = \sqrt[8]{\prod_{i=1}^{8}{(1+R_i)}} - 1 \tag{3.6}$$</span>
+$$
+\begin{array}{lr}
+    \text{Retorno Total} = R = \prod_{i=1}^{8}{(1+R_i)} - 1 & \text{(3.5)}
+\end{array}
+$$
+
+</span>
+
+<span id="eq3-6">
+
+$$
+\begin{array}{lr}
+    \overline{R} = \sqrt[8]{\prod_{i=1}^{8}{(1+R_i)}} - 1 & \text{(3.6)}
+\end{array}
+$$
+
+</span>
 
 Além disso, ainda se baseando nos retornos anuais, é possível verificar que o beta das carteiras selecionadas foi de 0,63, ou seja, o método FCD-TOPSIS Entropia se mostrou menos sensível às variações de mercado, indicando ser uma carteira de investimentos em ações segura.
 
@@ -1911,7 +2275,15 @@ Com o intuito de avaliar melhor a eficácia do modelo e a contribuição do mét
 
 O _backtest_ do modelo FCD foi utilizado como um grupo de controle para avaliar a contribuição da adição do TOPSIS aos modelos de _valuation_, observando seu impacto na performance da carteira e na consistência em superar os retornos do Ibovespa ao longo do tempo. Os resultados da simulação constam na [Tabela 10](#table10) e no [Gráfico 5](#graphic5). Vale ressaltar que a métrica $S$ da [Tabela 10](#table10) se refere ao índice Sharpe (SHARPE, 1994), uma medida de desempenho que relaciona o prêmio do risco e o próprio risco de um ativo e informa o quanto de rentabilidade adicional – isto é, além da rentabilidade livre de risco –, por unidade de risco incorrido para obtê-la, cujo cálculo é dado por:
 
-<span id="eq4-1">$$ S = \frac{R_i-R_f}{\sigma_i} \tag{4.1}$$</span>
+<span id="eq4-1">
+
+$$
+\begin{array}{lr}
+    S = \frac{R_i-R_f}{\sigma_i} & \text{(4.1)}
+\end{array}
+$$
+
+</span>
 
 Onde:
 
@@ -2051,7 +2423,7 @@ Onde:
 
 |<span id="graphic5">Gráfico 5</span> – Retornos dos modelos vs Retornos do Ibovespa|
 |:---:|
-|![Gráfico 5 – Retornos dos modelos vs Retornos do Ibovespa](.github/assets/graphic5.png)|
+|![Gráfico 5 – Retornos dos modelos vs Retornos do Ibovespa](./.github/assets/graphic5.png)|
 |Fonte: Elaboração própria|
 
 Pelos resultados obtidos, é possível ver que o modelo TOPSIS Entropia foi o que mais teve êxito em superar o Ibovespa, batendo o seu retorno em 6 dos 8 anos do período simulado, o que indicou ser o modelo mais adequado para o investidor que vise ganhos acima do mercado consistentes. Infelizmente, o mesmo não pôde ser concluído para o modelo FCD-TOPSIS Entropia, originalmente proposto, que só superou o Ibovespa em metade dos anos, o que não foi o suficiente para concluir se ele é eficaz em bater os retornos do mercado com consistência no longo prazo. O mesmo resultado inconclusivo foi encontrado para o FCD-TOPSIS, sem o método da Entropia. Curiosamente, os modelos que utilizaram os métodos separadamente (apenas o FCD ou o apenas o TOPSIS), obtiveram uma eficácia maior do que quando os dois foram empregados conjuntamente, superando o mercado em 5 dos 8 anos. Porém, essa pequena diferença não possibilitou concluir se estes modelos mais simples são mais eficazes no longo prazo do que os que aplicam ambos.
