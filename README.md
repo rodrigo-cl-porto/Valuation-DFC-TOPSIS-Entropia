@@ -152,6 +152,8 @@ Avaliar com precisão o valor justo de um ativo é uma tarefa imprescindível pa
 
 Dentre os ativos negociados no mercado financeiro, as ações são os que possuem o maior potencial de valorização no longo prazo, como apontado por Siegel (2015). Ele analisou a rentabilidade real das principais aplicações financeiras estadunidenses ao longo dos últimos 210 anos, verificando o quanto o investimento de US$ 1,00 em 1802, em cada um dos principais conjuntos de ativos do mercado, valeria em 2012.
 
+![Gráfico 1](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/graphic1.png)
+
 |<span id="graphic1">Gráfico 1</span> – Rentabilidades reais dos ativos no mercado dos EUA, em escala logarítmica, 1802-2012|
 |:---:|
 |![Gráfico 1](https://cdn.jsdelivr.net/gh/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/docs/assets/graphic1.png)|
