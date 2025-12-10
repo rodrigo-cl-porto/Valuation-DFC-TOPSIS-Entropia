@@ -636,7 +636,7 @@ Existem vários tipos de modelos de _valuation_ e a sua complexidade aceitada de
 
 $$
 \begin{array}{lr}
-    VIA = \sqrt{22.5 \times LPA \times VPA} & \text{(2.1)}
+    VIA = \sqrt{22.5 \cdot LPA \cdot VPA} & \text{(2.1)}
 \end{array}
 $$
 
@@ -653,7 +653,7 @@ Donde o investidor pode estimar a margem de segurança como sendo:
 
 $$
 \begin{array}{lr}
-    MS = \frac{VIA - P}{P} \times 100 \text{\%} & \text{(2.2)}
+    MS = \frac{VIA - P}{P} \cdot 100 \text{\%} & \text{(2.2)}
 \end{array}
 $$
 
@@ -1297,7 +1297,7 @@ Obtendo, assim, a matriz de decisão normalizada .
 
 $$
 \begin{array}{lr}
-    \overline{D}_{n \times m} =
+    \overline{D}_{n \cdot m} =
     \begin{matrix}
         \ & \begin{matrix} C_1 & \dots & C_j & \dots & C_m\end{matrix} \\
         \begin{matrix}A_1 \\ \vdots \\ A_i \\ \vdots \\ A_n\end{matrix} &
@@ -1932,7 +1932,7 @@ Após o cálculo dos indicadores e de seus pesos, o TOPSIS se encarrega de calcu
 
 $$
 \begin{array}{lr}
-    f_A = (2 \cdot CC - 1) \cdot 100\text{\%} & \text{(3.3)}
+    f_A = (2 \cdot CC - 1) \cdot 100 \text{\%} & \text{(3.3)}
 \end{array}
 $$
 
