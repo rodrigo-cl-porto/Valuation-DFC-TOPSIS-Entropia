@@ -1,4 +1,4 @@
-# [AVALIAÇÃO DE SOCIEDADES ANÔNIMAS BRASILEIRAS: Uma proposta de _valuation_ com Fluxo de Caixa Descontado e ordenação por <abbr title="Technique for Order of Preference by Similarity to Ideal Solution">TOPSIS</abbr>](https://github.com/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/wiki)
+# [AVALIAÇÃO DE SOCIEDADES ANÔNIMAS BRASILEIRAS](https://github.com/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/wiki): Uma proposta de _valuation_ com Fluxo de Caixa Descontado e ordenação por <abbr title="Technique for Order of Preference by Similarity to Ideal Solution">TOPSIS</abbr>
 
 Trabalho de Conclusão de Curso apresentado ao Corpo Docente do Departamento de Engenharia de Produção da Escola de Engenharia da Universidade Federal Fluminense, como parte dos requisitos necessários à obtenção do título de Engenheiro de Produção.
 
