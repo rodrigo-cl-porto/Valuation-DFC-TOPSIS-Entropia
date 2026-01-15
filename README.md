@@ -10,6 +10,7 @@ Trabalho de Conclusão de Curso apresentado ao Corpo Docente do Departamento de 
 - Niterói - RJ
 
 ## RESUMO
+
 Este trabalho tem como objetivo apresentar um método automatizado para avaliar empresas brasileiras listadas na B3 com base na análise de seus balanços patrimoniais, demonstrações de resultados e demonstrações de fluxo de caixa. O processo de avaliação é dividido em duas etapas. Primeiramente, adota-se uma abordagem intrínseca, utilizando o método de Fluxo de Caixa Descontado (FCD) para calcular o valor intrínseco inicial das ações. Em seguida, recorre-se a uma abordagem comparativa, na qual empresas pertencentes ao mesmo setor são ordenadas através do método multicritério TOPSIS, utilizando indicadores fundamentalistas como critérios do modelo. O TOPSIS, por sua vez, determina um coeficiente de similaridade para cada empresa, que serve como subsídio para o cálculo do prêmio ou desconto em relação ao valor intrínseco original. Esse cálculo resulta no valor intrínseco ajustado, que por sua vez é utilizado para estimar o potencial de valorização ou desvalorização das ações, também conhecido por margem de segurança, a qual será usada para selecionar as ações com as maiores margens em cada setor para compor a carteira a ser performada no ano. Após simular a performance das carteiras selecionadas pelo método proposto, para o período de 2016 a 2023, observou-se que elas rentabilizaram mais do que o índice de mercado brasileiro, o Ibovespa.
 
 **Palavras-chave**: Valuation, Fluxo de Caixa Descontado, TOPSIS, ETL.
@@ -81,7 +82,7 @@ Agradeço, primeiramente, aos meus pais, que depositaram todos os seus esforços
 
 Agradeço ao Prof. Gilson Lima pela sua orientação com este trabalho e pelos insights sobre a sua elaboração. Também agradeço ao Prof. Ricardo Bordeaux pela sua orientação, pela sua disponibilidade para tirar minhas dúvidas e pelas recomendações bibliográficas sobre finanças e avaliação de econômica de empresas, os quais foram úteis para o desenvolvimento deste trabalho.
 
-Agradeço também aos vários colegas e ao restante dos professores com quem me encontrei ao longo da minha jornada acadêmica na UFF
+Agradeço também aos vários colegas e ao restante dos professores com quem me encontrei ao longo da minha jornada acadêmica na UFF.
 
 ## EPÍGRAFE
 
