@@ -1,4 +1,4 @@
-# AVALIAÇÃO DE SOCIEDADES ANÔNIMAS BRASILEIRAS: Uma proposta de _valuation_ com Fluxo de Caixa Descontado e ordenação por <abbr title="Technique for Order of Preference by Similarity to Ideal Solution">TOPSIS</abbr>
+# [AVALIAÇÃO DE SOCIEDADES ANÔNIMAS BRASILEIRAS: Uma proposta de _valuation_ com Fluxo de Caixa Descontado e ordenação por <abbr title="Technique for Order of Preference by Similarity to Ideal Solution">TOPSIS</abbr>](https://github.com/rodrigo-cl-porto/Valuation-DFC-TOPSIS-Entropia/wiki)
 
 Trabalho de Conclusão de Curso apresentado ao Corpo Docente do Departamento de Engenharia de Produção da Escola de Engenharia da Universidade Federal Fluminense, como parte dos requisitos necessários à obtenção do título de Engenheiro de Produção.
 
@@ -21,3 +21,7 @@ Este trabalho tem como objetivo apresentar um método automatizado para avaliar 
 This study aims to present an automated method to evaluate Brazilian companies listed on B3 based on the analysis of their balance sheets, income statements and cash flow statements. The evaluation process is divided into two stages. Firstly, an intrinsic approach is adopted, using the Discounted Cash Flow (DCF) method to calculate the initial intrinsic value of the shares. Next, a comparative approach is used, in which companies belonging to the same sector are ordered using the <abbr title="Technique for Order of Preference by Similarity to Ideal Solution">TOPSIS</abbr> multi-criteria method, using fundamental indicators as model criteria. <abbr title="Technique for Order of Preference by Similarity to Ideal Solution">TOPSIS</abbr>, in turn, determines a similarity coefficient for each company, which serves as a subsidy for calculating the premium or discount in relation to the original intrinsic value. This calculation results in the adjusted intrinsic value, which in turn is used to estimate the potential for appreciation or devaluation of shares, also known as margin of safety, which will be used to select shares with the highest margins in each sector to compose the portfolio to be performed in the year. After simulating the performance of the portfolios selected by the proposed method, for the period from 2016 to 2023, it was observed that they generated more profitability than the Brazilian market index, the Ibovespa.
 
 **Keywords**: Valuation, Discounted Cash Flow, <abbr title="Technique for Order of Preference by Similarity to Ideal Solution">TOPSIS</abbr>, <abbr title="Extract, Transform & Load">ETL</abbr>
+
+---
+
+O texto original se encontra neste [URI](https://app.uff.br/riuff/handle/1/33364)
